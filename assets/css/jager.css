@@ -1,0 +1,32 @@
+.jager-alert {
+	height: 60px;
+	width: 100%;
+	display: none;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	position: fixed;	
+	font-size: 1.15em;
+	color: white;
+}
+
+.jager-alert.alert-info {
+	background: #2196F3;
+}
+
+.jager-alert.alert-success {
+	background: #4CAF50;
+}
+
+.jager-alert.alert-error {
+	background: #f44336;
+}
+
+.flex {
+	display: flex !important;
+}
+
+.sidebar-menu span.fa {
+	width: 40px !important;
+}

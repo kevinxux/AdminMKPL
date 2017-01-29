@@ -1,0 +1,144 @@
+<header id="topbar" class="alt">
+	<div class="topbar-left pull-left">
+		<h1 class="mn">Empresas</h1><span class="text-shady-lady fs15">Gestión de empresas</span>
+	</div>
+	<div class="topbar-right">
+		<div class="btn-group">
+			<button type="button" data-ng-click="vm.open();" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+		</div>
+	</div>
+</header>
+<section id="content" class="table-layout animated fadeIn">
+	<div class="sub-content col-sm-6">
+		<table class="table">
+			<thead>
+				<tr class="primary">
+					<th>Id</th>
+					<th>Nombre comercial</th>
+					<th>Razón social</th>
+					<th>Tipo de documento</th>
+					<th>N° de documento</th>
+					<th><i class="fa fa-laptop" title="Tiene tienda virtual"></i></th>
+					<th>Web</th>
+					<th>Fecha de creación</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="c in vm.allBusiness">
+					<td data-ng-bind="c.idEntidad"></td>
+					<td data-ng-bind="c.nombreComercial"></td>
+					<td data-ng-bind="c.razonSocial"></td>
+					<td data-ng-bind="vm.findInDocumentList(c.idTipoDocumento)"></td>
+					<td data-ng-bind="c.numeroDocumento"></td>
+					<td><i class="fa" data-ng-class="c.tiendaVirtual ? 'fa-check':'fa-times'"></i></td>
+					<td data-ng-bind="c.web"></td>
+					<td data-ng-bind="c.fechaCreacion"></td>
+					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i></td>
+				</tr>			
+			</tbody>
+			</table>
+		</div>
+	</section>
+	<div class="modal fade" id="modal-business" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-ng-click="vm.close();" >
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Gestión de empresa</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-horizontal admin-form">
+						<div class="form-group">
+							<label for="nombreComercial" class="col-lg-3 control-label">Nombre comercial</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.business.nombreComercial" id="nombreComercial" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="razonSocial" class="col-lg-3 control-label">Razón social</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.business.razonSocial" id="razonSocial" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="correo" class="col-lg-3 control-label">Correo electrónico</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.business.correo" id="correo" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="web" class="col-lg-3 control-label">Web</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.business.web" id="web" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="domicilioFiscal" class="col-lg-3 control-label">Domicilio Fiscal</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.business.domicilioFiscal" id="domicilioFiscal" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="idTipoDocumento" class="col-lg-3 control-label">Tipo de documento</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<label class="field select">
+										<select data-ng-model="vm.business.idTipoDocumento" data-ng-options="d.id as d.descripcion for d in vm.documents">
+                    						<option value="" disabled>--- Tipo de documento ---</option>
+                						</select>
+                						<i class="arrow"></i>
+									</label>									
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="numeroDocumento" class="col-lg-3 control-label">Número de documento</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.business.numeroDocumento" id="numeroDocumento" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="idTipoEntidad" class="col-lg-3 control-label">Tipo de entidad</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<label class="field select">
+										<select data-ng-model="vm.business.idTipoEntidad" data-ng-options="d.idTipoEntidad as d.descripcion for d in vm.entityTypes">
+                    						<option value="" disabled>--- Tipo de entidad ---</option>
+                						</select>
+                						<i class="arrow"></i>
+									</label>									
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+						<label for="tiendaVirtual" class="col-lg-3 control-label">Tienda virtual</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.business.tiendaVirtual" id="tiendaVirtual" type="checkbox">
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-ng-click="vm.close();" >Cerrar</button>
+					<button type="button" class="btn btn-primary" data-ng-click="vm.ok()" data-ng-bind="vm.buttonPopup();"></button>
+				</div>
+			</div>
+		</div>
+	</div>

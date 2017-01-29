@@ -1,0 +1,44 @@
+<div class="container-body registro" data-ng-show="vm.showForm()">
+    <div class="form">
+        <div class="form-title">REGISTRO</div>
+        <div class="input-group">
+            <i class="fa fa-user"></i>            
+            <select data-ng-model="vm.user.documentId" data-ng-options="d.id as d.descripcion for d in vm.documents">
+                    <option value="">--- Tipo de documento ---</option>
+                </select>
+        </div>
+        <div class="input-group">
+            <i class="fa fa-user"></i>
+            <input type="text" data-ng-model="vm.user.documentNumber" placeholder="Número de documento">
+        </div>
+        <div class="input-group">
+            <i class="fa fa-user"></i>
+            <input type="text" data-ng-model="vm.user.mail" placeholder="Correo Electrónico">
+        </div>
+        <div class="input-group">
+            <i class="fa fa-user"></i>
+            <input type="text" data-ng-model="vm.user.name" placeholder="Nombre">
+        </div>
+        <div class="input-group">
+            <i class="fa fa-user"></i>
+            <input type="text" data-ng-model="vm.user.lastName" placeholder="Apellido">
+        </div>
+        <div class="buttons">
+            <button data-ng-disabled="vm.isProcessing()" data-ng-click="vm.register()">Regístrate</button>
+        </div>
+        <div class="registro">
+            <span>¿Ya estás registrado? </span>
+            <a ui-sref="marketplace.login">Inicia sesión</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-body message" data-ng-show="!vm.showForm()">
+    <div class="form">
+        <div class="form-title">¡FELICITACIONES!</div>
+        <span class="message">Por favor ingrese a su correo electrónico para asignar su contraseña e iniciar sesión.</span>
+        <div class="buttons">
+            <button ui-sref="marketplace.home">Ir al inicio</button>
+        </div>
+    </div>
+</div>

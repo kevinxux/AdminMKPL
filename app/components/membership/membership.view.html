@@ -1,0 +1,132 @@
+<header id="topbar" class="alt">
+	<div class="topbar-left pull-left">
+		<h1 class="mn">Membresías</h1><span class="text-shady-lady fs15">Gestión de membresías</span>
+	</div>
+	<div class="topbar-right">
+		<div class="btn-group">
+			<button type="button" data-ng-click="vm.open();" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+		</div>
+	</div>
+</header>
+<section id="content" class="table-layout animated fadeIn">
+	<div class="sub-content col-sm-6">
+		<table class="table">
+			<thead>
+				<tr class="primary">
+					<th>Id</th>
+					<th>Nombre</th>
+					<th><i class="fa fa-users" title="Cantidad de usuarios"></i></th>
+					<th><i class="fa fa-building" title="Cantidad de establecimientos"></i></th>
+					<th><i class="fa fa-tv" title="Cantidad de productos"></i></th>
+					<th><i class="fa fa-star" title="Cantidad de productos destacados"></i></th>
+					<th>Personalización</th>
+					<th>Activación</th>
+					<th>Costo</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="c in vm.memberships">
+					<td data-ng-bind="c.idMembresia"></td>
+					<td data-ng-bind="c.descripcion"></td>
+					<td data-ng-bind="c.numerodeUsuario"></td>
+					<td data-ng-bind="c.cantidadEstablecimientos"></td>
+					<td data-ng-bind="c.productosEmpresa"></td>
+					<td data-ng-bind="c.productosDestacados"></td>
+					<td>
+						<i class="fa" data-ng-class="c.personalizacion ? 'fa-check':'fa-times'"></i>
+					</td>
+					<td>
+						<i class="fa" data-ng-class="c.activacion ? 'fa-check':'fa-times'"></i>
+					</td>
+					<td data-ng-bind="c.costo"></td>
+					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<div class="modal fade" id="modal-membership" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-ng-click="vm.close();" >
+				<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">Gestión de membresía</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-horizontal">
+					<div class="form-group">
+						<label for="nombre" class="col-lg-3 control-label">Nombre</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.descripcion" id="nombre" type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="userscount" class="col-lg-3 control-label">Número de usuarios</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.numerodeUsuario" id="userscount" type="number" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="cantidadEstablecimientos" class="col-lg-3 control-label">Cantidad de establecimientos</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.cantidadEstablecimientos" id="cantidadEstablecimientos" type="number" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="productosEstablecimientos" class="col-lg-3 control-label">Cantidad de Productos</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.productosEmpresa" id="productosEstablecimientos" type="number" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="productosDestacados" class="col-lg-3 control-label">Productos destacados</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.productosDestacados" id="productosDestacados" type="number" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="costo" class="col-lg-3 control-label">Costo</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.costo" id="costo" type="number" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="personalizacion" class="col-lg-3 control-label">Personalización</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.personalizacion" id="personalizacion" type="checkbox">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="activacion" class="col-lg-3 control-label">Activación</label>
+						<div class="col-lg-8">
+							<div class="bs-component">
+								<input data-ng-model="vm.membership.activacion" id="activacion" type="checkbox">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-ng-click="vm.close();">Cerrar</button>
+				<button type="button" class="btn btn-primary" data-ng-click="vm.ok()" data-ng-bind="vm.buttonPopup();"></button>
+			</div>
+		</div>
+	</div>
+</div>

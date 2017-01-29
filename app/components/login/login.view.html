@@ -1,0 +1,45 @@
+<!-- Start: Main-->
+<div id="main" class="animated fadeIn">
+    <!-- Start: Content-Wrapper-->
+    <section id="content_wrapper">
+        <!-- begin canvas animation bg-->
+        <div id="canvas-wrapper">
+            <canvas id="demo-canvas"></canvas>
+        </div>
+        <!-- Begin: Content-->
+        <section id="content">
+            <div id="login1" class="admin-form theme-info">
+                <div class="row mb15 table-layout">
+                    <div class="col-xs-12 va-m pln"><a ui-sref="login" title="Return to Dashboard"><img src="http://placehold.it/250x60?text=LOGO" title="TemplateMonster Logo" class="img-responsive w250"></a></div>
+                </div>
+                <div class="panel panel-info mt10 br-n">
+                    <form id="contact">
+                        <div class="panel-body bg-light p30">
+                            <div class="row">
+                                <div class="col-sm-12 pr30">
+                                    <div class="section">
+                                        <label for="username" class="field-label text-muted fs18 mb10">Correo Electrónico</label>
+                                        <label for="username" class="field prepend-icon">
+                                            <input id="username" data-ng-model="vm.credentials.mail" type="text" name="username" placeholder="Ingresa tu correo electrónico" class="gui-input">
+                                            <label for="username" class="field-icon"><i class="fa fa-user"></i></label>
+                                        </label>
+                                    </div>
+                                    <div class="section">
+                                        <label for="username" class="field-label text-muted fs18 mb10">Contraseña</label>
+                                        <label for="password" class="field prepend-icon">
+                                            <input id="password" data-ng-model="vm.credentials.password" type="password" name="password" placeholder="Ingrese su contraseña" class="gui-input">
+                                            <label for="password" class="field-icon"><i class="fa fa-lock"></i></label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer clearfix p10 ph15">
+                            <button data-ng-click="vm.login()" data-ng-disabled="vm.isProcessing()" class="button btn-primary mr10 pull-right">Inicia sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
