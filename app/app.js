@@ -70,7 +70,8 @@
                             return lazy.load([{
                                 files: [
                                     './app/components/admin/admin.controller.js',
-                                    './app/components/login/login.service.js'
+                                    './app/components/login/login.service.js',
+                                    './app/components/admin/admin.service.js'
                                     // './css/culqi-prepanel.css',
                                 ]
                             }]);
