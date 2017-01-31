@@ -40,7 +40,9 @@
 						<i class="fa" data-ng-class="c.activacion ? 'fa-check':'fa-times'"></i>
 					</td>
 					<td data-ng-bind="c.costo"></td>
-					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i></td>
+					<td>
+						<i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i>
+					</td>
 				</tr>
 			</tbody>
 		</table>
@@ -126,6 +128,7 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-ng-click="vm.close();">Cerrar</button>
 				<button type="button" class="btn btn-primary" data-ng-click="vm.ok()" data-ng-bind="vm.buttonPopup();"></button>
+				<button type="button" class="btn btn-warning" data-ng-click="vm.delete();" ng-if="vm.showdelete();">Eliminar</button>
 			</div>
 		</div>
 	</div>

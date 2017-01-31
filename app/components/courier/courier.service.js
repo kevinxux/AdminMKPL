@@ -3,21 +3,21 @@
 
     angular
         .module('marketplace')
-        .factory('MembershipService', MembershipService);
+        .factory('CourierService', CourierService);
 
     /* @ngInject */
-    function MembershipService(BASE_PATH, $http) {
+    function CourierService(BASE_PATH, $http) {
 
-        var ALL_CATEGORIES = "Membresia/ObtenerMembresias";
-        var EDIT = "Membresia/ModificarMembresia";
-        var SAVE = "Membresia/NuevaMembresia";
-        var DELETE = "Membresia/EliminarMembresia/";
+        var ALL_COURIERS = "TipoCourier/ObtenerTipoCouriers";
+        var EDIT = "TipoCourier/ModificarTipoCourier";
+        var SAVE = "TipoCourier/NuevaTipoCourier";
+        var REMOVE = "TipoCourier/EliminarTipoCourier";
 
         var service = {
             findAll: findAll,
             put: put,
             save: save,
-            del: del
+            remove: remove
         };
         return service;
 
@@ -51,8 +51,10 @@
             }
         }
 
-        function del(data) {
-            return $http.delete(BASE_PATH + DELETE+data.idMembresia+"/"+data.token)
+        function remove(data) {
+            return $http.delete(BASE_PATH + REMOVE
+                                +   "/" +   data.idTipoCourier
+                                +   "/" +   data.token)
                 .then(getCallResponse)
                 .catch(getCallError);
 
@@ -64,9 +66,8 @@
                 return error;
             }
         }
-
         function findAll() {
-           return $http.get(BASE_PATH + ALL_CATEGORIES)
+           return $http.get(BASE_PATH + ALL_COURIERS)
                 .then(getCallResponse)
                 .catch(getCallError);
 

@@ -43,52 +43,130 @@
 <div class="sidebar-left-content nano-content">
 <ul class="nav sidebar-menu">
   <li class="sidebar-label pt35"></li>
-  <li id="dashboard">
+  <li id="dashboard" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.dashboard">
       <span class="fa fa-home"></span>
       <span class="sidebar-title">Inicio</span>
     </a>
   </li>
-  <li id="business">
+  <li id="product" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.product">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Producto</span>
+    </a>
+  </li>
+  <li id="combination" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.combination">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Combinacion</span>
+    </a>
+  </li>
+  <li id="stock" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.stock">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Stock</span>
+    </a>
+  </li>
+  <li id="combo" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.combo">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Combo</span>
+    </a>
+  </li>
+  <li id="sale" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.sale">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Realizar venta</span>
+    </a>
+  </li>
+  <li id="saleAdmin" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.saleAdmin">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Gestionar venta</span>
+    </a>
+  </li>
+  <li id="couriers" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.courier">
+      <span class="fa fa-home"></span>
+      <span class="sidebar-title">Couriers</span>
+    </a>
+  </li>
+  <li id="business" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.business">
       <span class="fa fa-building"></span>
       <span class="sidebar-title">Empresas</span>
     </a>
   </li>
-  <li id="profile">
+  <!-- <li id="profile" >
     <a ui-sref="admin.profile">
       <span class="fa fa-users"></span>
       <span class="sidebar-title">Perfiles</span>
     </a>
-  </li>
-  <li id="parameter">
+  </li> -->
+  <li id="parameter" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.parameter">
       <span class="fa fa-cog"></span>
       <span class="sidebar-title">Parámetros</span>
     </a>
   </li>
-  <li id="currency">
+  <li id="currency" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.currency">
       <span class="fa fa-money"></span>
       <span class="sidebar-title">Monedas</span>
     </a>
   </li>
-  <li id="membership">
+  <li id="membership" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.membership">
       <span class="fa fa-star"></span>
       <span class="sidebar-title">Membresías</span>
     </a>
   </li>
-  <li id="category">
+  <li id="category" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.category">
       <span class="fa fa-cubes"></span>
       <span class="sidebar-title">Categorías</span>
     </a>
   </li>
-  <li id="entity-type">
+  <li id="subCategories" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.subCategories">
+      <span class="fa fa-cogs"></span>
+      <span class="sidebar-title">Sub categorías</span>
+    </a>
+  </li>
+  <li id="entity-type" data-ng-if="vm.user.tipoId == 1">
     <a ui-sref="admin.entity-type">
       <span class="fa fa-cogs"></span>
       <span class="sidebar-title">Tipos de entidad</span>
+    </a>
+  </li>
+  <li id="workers" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.workers">
+      <span class="fa fa-cogs"></span>
+      <span class="sidebar-title">Trabajadores</span>
+    </a>
+  </li>
+  <li id="changeType" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.changeType">
+      <span class="fa fa-cogs"></span>
+      <span class="sidebar-title">Tipo de cambio</span>
+    </a>
+  </li>
+  <li id="couriersManagement" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.couriersManagement">
+      <span class="fa fa-cogs"></span>
+      <span class="sidebar-title">Couriers</span>
+    </a>
+  </li>
+  <li id="combinationType" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.combinationType">
+      <span class="fa fa-cogs"></span>
+      <span class="sidebar-title">Tipo de combinación</span>
+    </a>
+  </li>
+  <li id="combinationSubType" data-ng-if="vm.user.tipoId == 1">
+    <a ui-sref="admin.combinationSubType">
+      <span class="fa fa-cogs"></span>
+      <span class="sidebar-title">Subtipo de Combinación</span>
     </a>
   </li>
 </ul>

@@ -11,7 +11,10 @@
 		vm.logout = logout;
 		vm.showModalContrasena = showModalContrasena;
 		vm.cambiarContrasena = cambiarContrasena;
+		
 		init();
+
+		vm.user = JSON.parse(window.atob(store.get('X-MKPL-USER')));
 
 		function init() {
 			$("body").removeClass();
@@ -25,8 +28,8 @@
             LoginService.logout(data)
                 .then(function(res) {
                     if (res.status === 200) {
-                        Jager.success("Has salido correctamente");
-
+                        Jager.success("Has cerrado sesión correctamente");
+						store.remove('X-MKPL-USER');
                         store.remove('X-MKPL-DATA');
                         $state.go('login');
                     } else {
