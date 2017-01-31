@@ -39,10 +39,8 @@
             vm.open();
         }
 
-        vm.preDelete = function(membership) {
-            deleting = true;
-            vm.membership = JSON.parse(JSON.stringify(membership));
-            vm.deleteModalOpen();
+        vm.showdelete = function(){
+            return editing;
         }
 
         vm.delete = function() {
@@ -62,7 +60,7 @@
                     } else {                            
                         Jager.error(res.data);
                     }
-                    vm.closeDeleteModal();         
+                    vm.close();    
                 });
 
         }

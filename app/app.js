@@ -217,6 +217,23 @@
                 }
             })
 
+            .state('admin.courier', {
+                url: '/courier',
+                templateUrl: './app/components/courier/courier.view.html',
+                controller: 'CourierController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/courier/courier.controller.js',
+                                './app/components/courier/courier.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
+
             .state('admin.entity-type', {
                 url: '/entity/type',
                 templateUrl: './app/components/entity-type/entity-type.view.html',

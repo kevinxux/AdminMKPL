@@ -42,7 +42,6 @@
 					<td data-ng-bind="c.costo"></td>
 					<td>
 						<i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i>
-						<i class="fa fa-times" data-ng-click="vm.preDelete(c)"></i>
 					</td>
 				</tr>
 			</tbody>
@@ -129,26 +128,7 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-ng-click="vm.close();">Cerrar</button>
 				<button type="button" class="btn btn-primary" data-ng-click="vm.ok()" data-ng-bind="vm.buttonPopup();"></button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="delete-membership" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-ng-click="vm.closeDeleteModal();" >
-				<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title">Gestión de membresía</h4>
-			</div>
-			<div class="modal-body">
-				¿Desea eliminar la membresía <b data-ng-bind="vm.membership.descripcion"></b>?
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-ng-click="vm.closeDeleteModal();">Cerrar</button>
-				<button type="button" class="btn btn-primary" data-ng-click="vm.delete()">Eliminar</button>
+				<button type="button" class="btn btn-warning" data-ng-click="vm.delete();" ng-if="vm.showdelete();">Eliminar</button>
 			</div>
 		</div>
 	</div>
