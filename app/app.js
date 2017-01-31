@@ -316,6 +316,22 @@
                     }]
                 }
             })
+            .state('admin.subcategories', {
+                url: '/subcategories',
+                templateUrl: './app/components/admin/subcategory/subcategory.view.html',
+                controller: 'SubcategoryController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/admin/subcategory/subcategory.controller.js',
+                                './app/components/admin/subcategory/subcategory.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
 
     };
 

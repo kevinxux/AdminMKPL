@@ -31,7 +31,7 @@
                         Jager.success("Has cerrado sesión correctamente");
 						store.remove('X-MKPL-USER');
                         store.remove('X-MKPL-DATA');
-                        $state.go('login');
+                        $state.go('index.login');
                     } else {
                         Jager.error(res.data);
                     }
