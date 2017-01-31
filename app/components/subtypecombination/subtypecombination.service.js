@@ -50,8 +50,9 @@
             }
         }
 
-        function findAll() {
-           return $http.get(BASE_PATH + ALL_TYPES)
+        function findAll(data) {
+           return $http.get(BASE_PATH + ALL_TYPES +
+                            '/' + data.idTipoCombinacion)
                 .then(getCallResponse)
                 .catch(getCallError);
 

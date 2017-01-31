@@ -283,7 +283,7 @@
                 }
             })
 
-            .state('admin.typecombination', {
+            .state('admin.combinationType', {
                 url: '/typecombination',
                 templateUrl: './app/components/typecombination/typecombination.view.html',
                 controller: 'TypeCombinationController',
@@ -300,7 +300,7 @@
                 }
             })
 
-            .state('admin.subtypecombination', {
+            .state('admin.combinationSubType', {
                 url: '/subtypecombination',
                 templateUrl: './app/components/subtypecombination/subtypecombination.view.html',
                 controller: 'SubTypeCombinationController',
@@ -310,7 +310,8 @@
                         return lazy.load([{
                             files: [
                                 './app/components/subtypecombination/subtypecombination.controller.js',
-                                './app/components/subtypecombination/subtypecombination.service.js'
+                                './app/components/subtypecombination/subtypecombination.service.js',
+                                './app/components/typecombination/typecombination.service.js'
                             ]
                         }]);
                     }]

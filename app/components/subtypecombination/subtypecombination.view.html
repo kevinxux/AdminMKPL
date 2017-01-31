@@ -10,6 +10,14 @@
 </header>
 <section id="content" class="table-layout animated fadeIn">
 	<div class="sub-content col-sm-6">
+		<div class="form-group">
+			<label for="nombre" class="col-lg-3 control-label">Tipo de Combinación</label>
+			<div class="col-lg-8">
+				<div class="bs-component">
+					<select ng-options="tc.descripcion for tc in vm.TypeCombinations track by tc.idTipoCombinacion" ng-model="vm.TypeCombination" ng-change="vm.changeSelect();"></select>
+				</div>
+			</div>
+		</div>
 		<table class="table">
 			<thead>
 				<tr class="primary">
@@ -20,7 +28,7 @@
 			</thead>
 			<tbody>
 				<tr data-ng-repeat="stc in vm.subTypeCombinations">
-					<td data-ng-bind="stc.idTipoCombinacion"></td>
+					<td data-ng-bind="stc.idSubTipoCombinacion"></td>
 					<td data-ng-bind="stc.descripcion"></td>
 					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(stc)"></i></td>
 				</tr>			
@@ -39,15 +47,6 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Tipo de Combinación</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<select ng-options="tc.descripcion for tc in vm.typeCombinations track by tc.idTipoCombinacion" ng-model="vm.subTypeCombination.idTipoCombinacion"></select>
-									<select data-ng-model="vm.typeCombinations" class="form-control"></select>
-								</div>
-							</div>
-						</div>
 						<div class="form-group">
 							<label for="nombre" class="col-lg-3 control-label">Nombre</label>
 							<div class="col-lg-8">

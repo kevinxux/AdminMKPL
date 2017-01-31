@@ -6,38 +6,44 @@
         .controller('SubTypeCombinationController', SubTypeCombinationController);
 
     /* @ngInject */
-    function SubTypeCombinationController(Util, SubTypeCombinationService, Jager, store) {
+    function SubTypeCombinationController(Util, SubTypeCombinationService, TypeCombinationService, Jager, store) {
         var vm = this;
         Util.active('subSubtypecombination');
+
+        vm.idTipoCombinacion = 0;
 
         var editing = false;
 
         var isProcessing = false;
 
         var token = store.get('X-MKPL-DATA');
-
-        findAll();
+        vm.changeSelect = function() {
+            findAll();
+        }
+        findAllTypes();
         function findAll() {                              
-	        SubTypeCombinationService.findAll()
+	        SubTypeCombinationService.findAll(vm.TypeCombination)
 	            .then(function(res) {
 	                if (res.status === 200) {
 	                    vm.subTypeCombinations = res.data;
+	                    ;
 	                } else {
 	                	console.error(res.data);
 	                }
 	            })            
         };
-        // findAllTypes();
-        // function findAllTypes() {                              
-        //     TypeCombinationService.findAll()
-        //         .then(function(res) {
-        //             if (res.status === 200) {
-        //                 vm.typeCombinations = res.data;
-        //             } else {
-        //                 console.error(res.data);
-        //             }
-        //         })            
-        // };
+        function findAllTypes(){
+            TypeCombinationService.findAll()
+                .then(function(res) {
+                    if (res.status === 200) {
+                        vm.TypeCombinations = res.data;
+                        vm.TypeCombination = vm.TypeCombinations.length > 0 ? vm.TypeCombinations[0] : 0;
+                        findAll();
+                    } else {
+                        console.error(res.data);
+                    }
+                })
+        }
 
         vm.buttonPopup = function() {
             return editing ? "Editar" : "Agregar";
@@ -70,7 +76,7 @@
             isProcessing = true;
             if (editing) {
                 vm.subTypeCombination.token = window.atob(token);
-                TypeCombinationService.put(vm.subTypeCombination)
+                SubTypeCombinationService.put(vm.subTypeCombination)
                     .then(function(res) {
                         isProcessing = false;
                         if (res.status === 200) {
@@ -84,11 +90,12 @@
             } else {
             
                 var body = {
+                    idTipoCombinacion: vm.TypeCombination.idTipoCombinacion,
                     descripcion: vm.subTypeCombination.descripcion,
                     token: window.atob(token)
                 }
 
-                TypeCombinationService.save(body)
+                SubTypeCombinationService.save(body)
                     .then(function(res) {
                         isProcessing = false;
                         if (res.status === 200) {
