@@ -41,6 +41,11 @@
                             Jager.success("Has iniciado sesión correctamente");
                             //TODO: Guardar en resources del navegador
                             store.set('X-MKPL-DATA', window.btoa(res.data.token));
+                            var user = {
+                                tipoId: res.data.idTipoUsuario,
+                                tipo: res.data.descripcionTipoUsuario
+                            }
+                            store.set('X-MKPL-USER', window.btoa(JSON.stringify(user)));
                             vm.credentials = {};
                             $state.go('admin.dashboard');
                         } else {
