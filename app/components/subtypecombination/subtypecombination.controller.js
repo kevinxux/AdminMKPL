@@ -3,10 +3,10 @@
 
     angular
         .module('marketplace')
-        .controller('SubTypeCombinationController', SubSubSubTypeCombinationController);
+        .controller('SubTypeCombinationController', SubTypeCombinationController);
 
     /* @ngInject */
-    function SubSubTypeCombinationController(Util, SubTypeCombinationService, TypeCombinationService, Jager, store) {
+    function SubTypeCombinationController(Util, SubTypeCombinationService, Jager, store) {
         var vm = this;
         Util.active('subSubtypecombination');
 
@@ -27,17 +27,17 @@
 	                }
 	            })            
         };
-        findAllTypes();
-        function findAllTypes() {                              
-            TypeCombinationService.findAll()
-                .then(function(res) {
-                    if (res.status === 200) {
-                        vm.typeCombinations = res.data;
-                    } else {
-                        console.error(res.data);
-                    }
-                })            
-        };
+        // findAllTypes();
+        // function findAllTypes() {                              
+        //     TypeCombinationService.findAll()
+        //         .then(function(res) {
+        //             if (res.status === 200) {
+        //                 vm.typeCombinations = res.data;
+        //             } else {
+        //                 console.error(res.data);
+        //             }
+        //         })            
+        // };
 
         vm.buttonPopup = function() {
             return editing ? "Editar" : "Agregar";
