@@ -8,10 +8,10 @@
     /* @ngInject */
     function SubcategoryService(BASE_PATH, $http) {
 
-        var ALL_CATEGORIES = "CategoriaProducto/ObtenerCategoriaProductos";
-        var EDIT = "CategoriaProducto/ModificarCategoriaProducto";
-        var SAVE = "CategoriaProducto/NuevaCategoriaProducto";
-        var REMOVE = "CategoriaProducto/EliminarCategoriaProducto";
+        var ALL = "SubCategoriaProducto/ObtenerSubCategoriaProductos/";
+        var EDIT = "SubCategoriaProducto/ModificarSubCategoriaProducto";
+        var SAVE = "SubCategoriaProducto/NuevaSubCategoriaProducto";
+        var REMOVE = "SubCategoriaProducto/EliminarSubCategoriaProducto";
 
         var service = {
             findAll: findAll,
@@ -51,8 +51,8 @@
             }
         }
 
-        function findAll() {
-            return $http.get(BASE_PATH + ALL_CATEGORIES)
+        function findAll(idCategory) {
+            return $http.get(BASE_PATH + ALL + idCategory)
                 .then(getCallResponse)
                 .catch(getCallError);
 
@@ -66,9 +66,7 @@
         }
         function remove(data)
         {
-            return $http.delete(BASE_PATH + REMOVE
-                +   "/" +   data.idCategoriaProducto
-                +   "/" +   data.token)
+            return $http.delete(BASE_PATH + REMOVE, data)
                 .then(getCallResponse)
                 .catch(getCallError);
             function getCallResponse(response) {

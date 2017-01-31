@@ -1,6 +1,6 @@
 <header id="topbar" class="alt">
     <div class="topbar-left pull-left">
-        <h1 class="mn">Categorías</h1><span class="text-shady-lady fs15">Gestión de categorías</span>
+        <h1 class="mn">Categorías</h1><span class="text-shady-lady fs15">Gestión de Subcategorías</span>
     </div>
     <div class="topbar-right">
         <div class="btn-group">
@@ -8,6 +8,23 @@
         </div>
     </div>
 </header>
+<div class="col-sm-12">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="nombre" class="col-lg-3 control-label">Categoria</label>
+            <div class="col-lg-5">
+                <div class="bs-component">
+                    <select data-ng-change="vm.getSubcategories()"
+                            data-ng-model="vm.categorySelect"
+                            data-ng-options="c.idCategoriaProducto as c.descripcion for c in vm.categories"
+                            id="category"
+                            class="form-control">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section id="content" class="table-layout animated fadeIn">
     <div class="sub-content col-sm-6">
         <table class="table">
@@ -15,29 +32,27 @@
             <tr class="primary">
                 <th>Id</th>
                 <th>Nombre</th>
-                <th>Icono</th>
                 <th></th>
             </tr>
             </thead>
             <tbody>
-            <tr data-ng-repeat="c in vm.categories">
-                <td data-ng-bind="c.idCategoriaProducto"></td>
+            <tr data-ng-repeat="c in vm.subcategories">
+                <td data-ng-bind="c.idSubCategoriaProducto"></td>
                 <td data-ng-bind="c.descripcion"></td>
-                <td data-ng-bind="c.icono"></td>
                 <td><i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i></td>
             </tr>
             </tbody>
         </table>
     </div>
 </section>
-<div class="modal fade" id="modal-category" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal-subcategory" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-ng-click="vm.close();" >
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title">Gestión de categoría</h4>
+                <h4 class="modal-title">Gestión de Subcategoría</h4>
             </div>
             <div class="modal-body">
                 <div class="form-horizontal">
@@ -45,15 +60,7 @@
                         <label for="nombre" class="col-lg-3 control-label">Nombre</label>
                         <div class="col-lg-8">
                             <div class="bs-component">
-                                <input data-ng-model="vm.category.descripcion" id="nombre" type="text" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="nombre" class="col-lg-3 control-label">Icono</label>
-                        <div class="col-lg-8">
-                            <div class="bs-component">
-                                <input data-ng-model="vm.category.icono" id="icono" type="text" class="form-control">
+                                <input data-ng-model="vm.subcategory.descripcion" id="nombre" type="text" class="form-control">
                             </div>
                         </div>
                     </div>

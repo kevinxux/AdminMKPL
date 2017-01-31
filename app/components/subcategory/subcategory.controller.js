@@ -6,7 +6,7 @@
         .controller('SubcategoryController', SubcategoryController);
 
     /* @ngInject */
-    function SubcategoryController(Util, SubcategoryService, Jager, store) {
+    function SubcategoryController(Util, SubcategoryService, Jager, store, CategoryService) {
         var vm = this;
         Util.active('subCategories');
 
@@ -28,79 +28,97 @@
                 })
         };
 
+        vm.getSubcategories = function () {
+            SubcategoryService.findAll(vm.categorySelect)
+                .then(function (res) {
+                    if (res.status === 200) {
+                        vm.subcategories = res.data;
+                    } else {
+                        console.error(res.data);
+                    }
+                });
+        };
+
         vm.buttonPopup = function() {
             return editing ? "Editar" : "Agregar";
-        }
+        };
         vm.showdelete = function(){
             return editing;
-        }
-        vm.preEdit = function(category) {
+        };
+        vm.preEdit = function(subcategory) {
             editing = true;
-            vm.category = JSON.parse(JSON.stringify(category));
+            vm.subcategory = JSON.parse(JSON.stringify(subcategory));
             vm.open();
-        }
+        };
         vm.remove = function(){
             isProcessing = true;
-            vm.category.token = window.atob(token);
-            CategoryService.remove(vm.category)
+            vm.subcategory.token = window.atob(token);
+            vm.subcategory.idCategoriaProducto = vm.categorySelect;
+
+            SubcategoryService.remove(vm.subcategory)
                 .then(function(res) {
                     isProcessing = false;
                     if (res.status === 200) {
                         Jager.success(res.data);
-                        findAll();
+                        vm.getSubcategories();
                     } else {
                         Jager.error(res.data);
                     }
                     vm.close();
                 });
 
-        }
+        };
         vm.ok = function() {
             isProcessing = true;
             if (editing) {
-                vm.category.token = window.atob(token);
-                CategoryService.put(vm.category)
+                vm.subcategory.token = window.atob(token);
+                vm.subcategory.idCategoriaProducto = vm.categorySelect;
+                SubcategoryService.put(vm.subcategory)
                     .then(function(res) {
                         isProcessing = false;
                         if (res.status === 200) {
-                            Jager.success("Se ha actualizado correctamente la categoría");
-                            findAll();
+                            Jager.success("Se ha actualizado correctamente la Subcategoría");
+                            vm.getSubcategories();
                         } else {
                             Jager.error(res.data);
                         }
                         vm.close();
                     });
             } else {
+                if(vm.categorySelect) {
 
-                var body = {
-                    descripcion: vm.category.descripcion,
-                    icono: vm.category.icono,
-                    token: window.atob(token)
+                    var body = {
+                        idCategoriaProducto: vm.categorySelect,
+                        descripcion: vm.subcategory.descripcion,
+                        token: window.atob(token)
+                    };
+                    console.log(body);
+                    SubcategoryService.save(body)
+                        .then(function(res) {
+                            isProcessing = false;
+                            if (res.status === 200) {
+                                Jager.success("Se ha registrado la Subcategoría");
+                                vm.getSubcategories();
+                            } else {
+                                Jager.error(res.data);
+                            }
+                            vm.close();
+                        });
+                }else{
+                    Jager.error("No ha seleccionado una categoria");
                 }
-
-                CategoryService.save(body)
-                    .then(function(res) {
-                        isProcessing = false;
-                        if (res.status === 200) {
-                            Jager.success("Se ha registrado la categoría");
-                            findAll();
-                        } else {
-                            Jager.error(res.data);
-                        }
-                        vm.close();
-                    });
             }
-        }
+        };
 
         vm.open = function() {
-            $("#modal-category").modal("show");
-        }
+            $("#modal-subcategory").modal("show");
+        };
 
         vm.close = function() {
             editing = false;
-            vm.category = {};
-            $("#modal-category").modal("hide");
-        }
+            vm.subcategory = {};
+            $("#modal-subcategory").modal("hide");
+        };
 
     };
 
