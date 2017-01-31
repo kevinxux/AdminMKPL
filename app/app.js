@@ -37,7 +37,7 @@
 
         $urlRouterProvider.otherwise(function($injector, $location) {
             var $state = $injector.get("$state");
-            $state.go("login");
+            $state.go("index.login");
         });
 
         $stateProvider
@@ -283,6 +283,39 @@
                 }
             })
 
+            .state('admin.typecombination', {
+                url: '/typecombination',
+                templateUrl: './app/components/typecombination/typecombination.view.html',
+                controller: 'TypeCombinationController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/typecombination/typecombination.controller.js',
+                                './app/components/typecombination/typecombination.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
+
+            .state('admin.subtypecombination', {
+                url: '/subtypecombination',
+                templateUrl: './app/components/subtypecombination/subtypecombination.view.html',
+                controller: 'SubTypeCombinationController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/subtypecombination/subtypecombination.controller.js',
+                                './app/components/subtypecombination/subtypecombination.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
 
     };
 
