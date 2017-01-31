@@ -6,12 +6,13 @@
         .controller('LoginController', LoginController);
 
     /* @ngInject */
-    function LoginController(LoginService, Jager, Validation, store, $state) {
+    function LoginController(LoginService, Jager, Validation, store, $state, $stateParams) {
         var vm = this;
 
         var isProcessing = false;
 
         vm.credentials = {};
+
 
         init();
 
@@ -25,6 +26,15 @@
                     y: window.innerHeight / 3.3
                 },
             });
+
+            if($state.params.cod){
+                vm.token = $state.params.cod;
+            }
+
+            if($state.params.isNew) {
+                vm.isNew = $state.params.isNew;
+                console.log(vm.isNew);
+            }
         }
 
         vm.isProcessing = function() {
@@ -51,7 +61,47 @@
                 isProcessing = false;
                 return;
             }
-        }
+        };
+
+        vm.restore = function() {
+            isProcessing = true;
+            LoginService.restore(vm.restoreU)
+                .then(function (res) {
+                    isProcessing = false;
+                    if(res.status === 200) {
+                        Jager.success("Se envio correctamente el email");
+                        $state.go('index.login');
+                    } else {
+                        Jager.error(res.data);
+                    }
+                });
+        };
+
+        vm.newPass = function () {
+            isProcessing = true;
+            var data = {
+                contrasenia: vm.restoreU.password,
+                token: vm.token
+            };
+
+            if(vm.isNew === 1){
+                LoginService.habilitarUser(data)
+                    .then(getCall);
+            }else{
+                LoginService.cambiarContrasena(data)
+                    .then(getCall);
+            }
+
+            function getCall(res) {
+                isProcessing = false;
+                if(res.status === 200) {
+                    Jager.success("Se restablecio correctamente la contraseña");
+                    $state.go('index.login');
+                } else {
+                    Jager.error(res.data);
+                }
+            }
+        };
 
         function isOk() {
             if (Validation.mail(vm.credentials.mail)) {

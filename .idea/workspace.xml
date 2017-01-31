@@ -2,550 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae619eac-82ae-401e-a8c8-784262c97f06" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/FontAwesome.otf" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.eot" afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.ttf" afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.woff" afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.eot" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.ttf" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.woff" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/octicons/octicons.eot" afterPath="$PROJECT_DIR$/assets/fonts/octicons/octicons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/octicons/octicons.ttf" afterPath="$PROJECT_DIR$/assets/fonts/octicons/octicons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/octicons/octicons.woff" afterPath="$PROJECT_DIR$/assets/fonts/octicons/octicons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Bold.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Bold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-BoldItalic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-BoldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-ExtraBold.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-ExtraBold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-ExtraBoldItalic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-ExtraBoldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Italic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Italic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Light.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Light.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-LightItalic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-LightItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Regular.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-Regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-SemiBold.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-SemiBold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-SemiBoldItalic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/OpenSans-SemiBoldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/1.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/2.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/3.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/4.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/5.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/6.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-01.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-02.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-03.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-04.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-05.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-06.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-06.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-07.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-07.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-08.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-08.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/avatar-09.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/avatar-09.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/placeholder.png" afterPath="$PROJECT_DIR$/assets/img/avatars/placeholder.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/profile_avatar.jpg" afterPath="$PROJECT_DIR$/assets/img/avatars/profile_avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/favicon.ico" afterPath="$PROJECT_DIR$/assets/img/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/admin-form-logo.png" afterPath="$PROJECT_DIR$/assets/img/logos/admin-form-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/logo-icon.png" afterPath="$PROJECT_DIR$/assets/img/logos/logo-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/logo-icon_white.png" afterPath="$PROJECT_DIR$/assets/img/logos/logo-icon_white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/logo.png" afterPath="$PROJECT_DIR$/assets/img/logos/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/logo_grey.png" afterPath="$PROJECT_DIR$/assets/img/logos/logo_grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/logo_red.png" afterPath="$PROJECT_DIR$/assets/img/logos/logo_red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logos/logo_white.png" afterPath="$PROJECT_DIR$/assets/img/logos/logo_white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/1.png" afterPath="$PROJECT_DIR$/assets/img/patterns/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/2.png" afterPath="$PROJECT_DIR$/assets/img/patterns/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/3.png" afterPath="$PROJECT_DIR$/assets/img/patterns/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/4.png" afterPath="$PROJECT_DIR$/assets/img/patterns/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/backgrounds/1.jpg" afterPath="$PROJECT_DIR$/assets/img/patterns/backgrounds/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/backgrounds/2.jpg" afterPath="$PROJECT_DIR$/assets/img/patterns/backgrounds/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/backgrounds/2.png" afterPath="$PROJECT_DIR$/assets/img/patterns/backgrounds/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/error-bg.jpg" afterPath="$PROJECT_DIR$/assets/img/patterns/error-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/topbar-bg.jpg" afterPath="$PROJECT_DIR$/assets/img/patterns/topbar-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/topbar-bg2.jpg" afterPath="$PROJECT_DIR$/assets/img/patterns/topbar-bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/Markdown.Editor.Icons.fw.png" afterPath="$PROJECT_DIR$/assets/img/plugins/Markdown.Editor.Icons.fw.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/Markdown.Editor.Icons.png" afterPath="$PROJECT_DIR$/assets/img/plugins/Markdown.Editor.Icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/admindock-sprite.png" afterPath="$PROJECT_DIR$/assets/img/plugins/admindock-sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/arrow_left_12x12.png" afterPath="$PROJECT_DIR$/assets/img/plugins/arrow_left_12x12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/arrow_right_12x12.png" afterPath="$PROJECT_DIR$/assets/img/plugins/arrow_right_12x12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/details_close.png" afterPath="$PROJECT_DIR$/assets/img/plugins/details_close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/details_open.png" afterPath="$PROJECT_DIR$/assets/img/plugins/details_open.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/plugins/grippy_large.png" afterPath="$PROJECT_DIR$/assets/img/plugins/grippy_large.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/sprites/favicons.png" afterPath="$PROJECT_DIR$/assets/img/sprites/favicons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/sprites/flag-sm.png" afterPath="$PROJECT_DIR$/assets/img/sprites/flag-sm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/sprites/flag-xs.png" afterPath="$PROJECT_DIR$/assets/img/sprites/flag-xs.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/sprites/news-logo_sprite.png" afterPath="$PROJECT_DIR$/assets/img/sprites/news-logo_sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/1.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/2.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/3.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/4.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/5.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_1.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_2.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_3.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_4.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_5.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_6.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/products/thumb_7.jpg" afterPath="$PROJECT_DIR$/assets/img/stock/products/thumb_7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/assets/lib/fa/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fonts/footable.eot" afterPath="$PROJECT_DIR$/plugins/fonts/footable.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fonts/footable.ttf" afterPath="$PROJECT_DIR$/plugins/fonts/footable.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fonts/footable.woff" afterPath="$PROJECT_DIR$/plugins/fonts/footable.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/ajax-loader.gif" afterPath="$PROJECT_DIR$/plugins/img/ajax-loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/alpha-horizontal.png" afterPath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/alpha-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/alpha.png" afterPath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/alpha.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/hue-horizontal.png" afterPath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/hue-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/hue.png" afterPath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/hue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/saturation.png" afterPath="$PROJECT_DIR$/plugins/img/bootstrap-colorpicker/saturation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/1.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/2.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/3.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/4.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/5.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/6.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/7.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/8.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/example_thumbs/9.jpg" afterPath="$PROJECT_DIR$/plugins/img/example_thumbs/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/icons.gif" afterPath="$PROJECT_DIR$/plugins/img/icons.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/images_dropzone/spritemap.png" afterPath="$PROJECT_DIR$/plugins/img/images_dropzone/spritemap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/images_dropzone/spritemap@2x.png" afterPath="$PROJECT_DIR$/plugins/img/images_dropzone/spritemap@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/arrow-down.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/arrow-down.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/arrow-up.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/arrow-up.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/cart.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/cart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/closedhand.cur" afterPath="$PROJECT_DIR$/plugins/img/mapplic/closedhand.cur" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/cloth.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/cloth.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/cross.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/cross.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/food.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/food.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/fullscreen-exit.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/fullscreen-exit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/fullscreen.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/fullscreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/health.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/health.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/loader.gif" afterPath="$PROJECT_DIR$/plugins/img/mapplic/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-basement-small.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-basement-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-basement.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-basement.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-first-small.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-first-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-first.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-first.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-ground-small.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-ground-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-ground.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-ground.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/amc.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/amc.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/applebees.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/applebees.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/att.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/att.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/belk.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/belk.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/cvs.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/cvs.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/gap.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/gap.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/hm.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/hm.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/jcpenney.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/jcpenney.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/kfc.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/kfc.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/macys.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/macys.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/mcdonalds.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/mcdonalds.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/oldnavy.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/oldnavy.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/petco.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/petco.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/pizzahut.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/pizzahut.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/pullbear.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/pullbear.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/sears.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/sears.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/sephora.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/sephora.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/sportchek.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/sportchek.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/starbucks.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/starbucks.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/subway.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/subway.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/walgreens.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/walgreens.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/zara.jpg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/thumb/zara.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/misc.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/misc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/openhand.cur" afterPath="$PROJECT_DIR$/plugins/img/mapplic/openhand.cur" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/pin-blue.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/pin-blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/pin-green.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/pin-green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/pin-orange.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/pin-orange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/pin-purple.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/pin-purple.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/pin-red.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/pin-red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/target.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/target.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/tooltip-triangle.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/tooltip-triangle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/viewer.png" afterPath="$PROJECT_DIR$/plugins/img/mapplic/viewer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/spritemap.png" afterPath="$PROJECT_DIR$/plugins/img/spritemap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/spritemap@2x.png" afterPath="$PROJECT_DIR$/plugins/img/spritemap@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/marketplace.iml" afterPath="$PROJECT_DIR$/.idea/marketplace.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/index/index.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/index/newpassword.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/index/recuperar.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/admin/admin.controller.js" afterPath="$PROJECT_DIR$/app/components/admin/admin.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/admin/admin.service.js" afterPath="$PROJECT_DIR$/app/components/admin/admin.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/admin/admin.view.html" afterPath="$PROJECT_DIR$/app/components/admin/admin.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/business/business.controller.js" afterPath="$PROJECT_DIR$/app/components/business/business.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/business/business.service.js" afterPath="$PROJECT_DIR$/app/components/business/business.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/business/business.view.html" afterPath="$PROJECT_DIR$/app/components/business/business.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/category/category.controller.js" afterPath="$PROJECT_DIR$/app/components/category/category.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/category/category.service.js" afterPath="$PROJECT_DIR$/app/components/category/category.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/category/category.view.html" afterPath="$PROJECT_DIR$/app/components/category/category.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/currency/currency.controller.js" afterPath="$PROJECT_DIR$/app/components/currency/currency.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/currency/currency.service.js" afterPath="$PROJECT_DIR$/app/components/currency/currency.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/currency/currency.view.html" afterPath="$PROJECT_DIR$/app/components/currency/currency.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dashboard/dashboard.controller.js" afterPath="$PROJECT_DIR$/app/components/dashboard/dashboard.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dashboard/dashboard.service.js" afterPath="$PROJECT_DIR$/app/components/dashboard/dashboard.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dashboard/dashboard.view.html" afterPath="$PROJECT_DIR$/app/components/dashboard/dashboard.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/entity-type/entity-type.controller.js" afterPath="$PROJECT_DIR$/app/components/entity-type/entity-type.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/entity-type/entity-type.service.js" afterPath="$PROJECT_DIR$/app/components/entity-type/entity-type.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/entity-type/entity-type.view.html" afterPath="$PROJECT_DIR$/app/components/entity-type/entity-type.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login/login.controller.js" afterPath="$PROJECT_DIR$/app/components/login/login.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login/login.service.js" afterPath="$PROJECT_DIR$/app/components/login/login.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login/login.view.html" afterPath="$PROJECT_DIR$/app/components/login/login.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/cart/cart.controller.js" afterPath="$PROJECT_DIR$/app/components/marketplace/cart/cart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/cart/cart.service.js" afterPath="$PROJECT_DIR$/app/components/marketplace/cart/cart.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/cart/cart.view.html" afterPath="$PROJECT_DIR$/app/components/marketplace/cart/cart.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/checkout/checkout.controller.js" afterPath="$PROJECT_DIR$/app/components/marketplace/checkout/checkout.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/checkout/checkout.service.js" afterPath="$PROJECT_DIR$/app/components/marketplace/checkout/checkout.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/checkout/checkout.view.html" afterPath="$PROJECT_DIR$/app/components/marketplace/checkout/checkout.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/home/home.controller.js" afterPath="$PROJECT_DIR$/app/components/marketplace/home/home.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/home/home.service.js" afterPath="$PROJECT_DIR$/app/components/marketplace/home/home.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/home/home.view.html" afterPath="$PROJECT_DIR$/app/components/marketplace/home/home.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/password/password.controller.js" afterPath="$PROJECT_DIR$/app/components/marketplace/password/password.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/password/password.service.js" afterPath="$PROJECT_DIR$/app/components/marketplace/password/password.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/password/password.view.html" afterPath="$PROJECT_DIR$/app/components/marketplace/password/password.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/product/product.controller.js" afterPath="$PROJECT_DIR$/app/components/marketplace/product/product.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/product/product.service.js" afterPath="$PROJECT_DIR$/app/components/marketplace/product/product.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/product/product.view.html" afterPath="$PROJECT_DIR$/app/components/marketplace/product/product.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/register/register.controller.js" afterPath="$PROJECT_DIR$/app/components/marketplace/register/register.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/register/register.service.js" afterPath="$PROJECT_DIR$/app/components/marketplace/register/register.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/marketplace/register/register.view.html" afterPath="$PROJECT_DIR$/app/components/marketplace/register/register.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/membership/membership.controller.js" afterPath="$PROJECT_DIR$/app/components/membership/membership.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/membership/membership.service.js" afterPath="$PROJECT_DIR$/app/components/membership/membership.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/membership/membership.view.html" afterPath="$PROJECT_DIR$/app/components/membership/membership.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/parameter/parameter.controller.js" afterPath="$PROJECT_DIR$/app/components/parameter/parameter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/parameter/parameter.service.js" afterPath="$PROJECT_DIR$/app/components/parameter/parameter.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/parameter/parameter.view.html" afterPath="$PROJECT_DIR$/app/components/parameter/parameter.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/profile/profile.controller.js" afterPath="$PROJECT_DIR$/app/components/profile/profile.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/profile/profile.service.js" afterPath="$PROJECT_DIR$/app/components/profile/profile.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/profile/profile.view.html" afterPath="$PROJECT_DIR$/app/components/profile/profile.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libraries/jager-alerts/jager.service.js" afterPath="$PROJECT_DIR$/app/libraries/jager-alerts/jager.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libraries/validations/validation.service.js" afterPath="$PROJECT_DIR$/app/libraries/validations/validation.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/other/index/index.service.js" afterPath="$PROJECT_DIR$/app/other/index/index.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/other/util/util.service.js" afterPath="$PROJECT_DIR$/app/other/util/util.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/admin-forms.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/admin-forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/admin-forms.min.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/admin-forms.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/all-themes.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/all-themes.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/all-themes.min.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/all-themes.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-alert.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-alert.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-danger.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-danger.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-dark.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-info.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-info.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-primary.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-primary.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-success.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-success.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-system.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-system.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-warning.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/css/skins/theme-warning.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/additional-methods.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/additional-methods.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery-ui-datepicker.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery-ui-datepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery-ui-monthpicker.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery-ui-monthpicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.spectrum.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.spectrum.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.stepper.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.stepper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.steps.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.steps.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery-ui-monthpicker.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery-ui-monthpicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery-ui-timepicker.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery-ui-timepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery.spectrum.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery.spectrum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery.steps.js" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/js/source/jquery.steps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/admin-forms.css" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/admin-forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/admin-forms.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/admin-forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/bootstrap_fix.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/bootstrap_fix.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/elements.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/elements.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/plugins.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/plugins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/all-themes.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/all-themes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/colors.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/colors.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/mixins/admin-skins.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/mixins/admin-skins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-alert.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-alert.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-danger.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-danger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-dark.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-dark.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-info.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-info.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-primary.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-primary.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-success.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-success.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-system.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-system.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-warning.less" afterPath="$PROJECT_DIR$/assets/admin-tools/admin-forms/less/skins/theme-warning.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/jager.css" afterPath="$PROJECT_DIR$/assets/css/jager.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/README.txt" afterPath="$PROJECT_DIR$/assets/fonts/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/font-awesome.css" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/font-awesome/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons.css" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/glyphicons.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.css" afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.svg" afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.dev.svg" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.dev.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.svg" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/IconSweets-Deluxe.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/License.rtf" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/License.rtf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/iconsweets/iconsweets.css" afterPath="$PROJECT_DIR$/assets/fonts/iconsweets/iconsweets.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/octicons/octicons.css" afterPath="$PROJECT_DIR$/assets/fonts/octicons/octicons.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/octicons/octicons.svg" afterPath="$PROJECT_DIR$/assets/fonts/octicons/octicons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/open-sans/open-sans.css" afterPath="$PROJECT_DIR$/assets/fonts/open-sans/open-sans.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/stateface/stateface-regular-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/stateface/stateface.css" afterPath="$PROJECT_DIR$/assets/fonts/stateface/stateface.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/zocial/zocial-regular-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fonts/zocial/zocial.css" afterPath="$PROJECT_DIR$/assets/fonts/zocial/zocial.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/avatars/license.txt" afterPath="$PROJECT_DIR$/assets/img/avatars/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/patterns/license.txt" afterPath="$PROJECT_DIR$/assets/img/patterns/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/sprites/license.txt" afterPath="$PROJECT_DIR$/assets/img/sprites/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stock/license.txt" afterPath="$PROJECT_DIR$/assets/img/stock/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/custom.js" afterPath="$PROJECT_DIR$/assets/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/demo/charts/d3.js" afterPath="$PROJECT_DIR$/assets/js/demo/charts/d3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/demo/charts/flot.js" afterPath="$PROJECT_DIR$/assets/js/demo/charts/flot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/demo/charts/highcharts.js" afterPath="$PROJECT_DIR$/assets/js/demo/charts/highcharts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/demo/demo.js" afterPath="$PROJECT_DIR$/assets/js/demo/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/demo/widgets.js" afterPath="$PROJECT_DIR$/assets/js/demo/widgets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/admindock/admindock.js" afterPath="$PROJECT_DIR$/assets/js/utility/admindock/admindock.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootbox/bootbox.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootbox/bootbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/affix.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/affix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/alert.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/button.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/carousel.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/collapse.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/collapse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/dropdown.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/modal.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/popover.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/popover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/scrollspy.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/scrollspy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/tab.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/tooltip.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/transition.js" afterPath="$PROJECT_DIR$/assets/js/utility/bootstrap/source/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/fullscreen/jquery.fullscreen.js" afterPath="$PROJECT_DIR$/assets/js/utility/fullscreen/jquery.fullscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/helpers.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/readme.txt" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery-scrollLock.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery-scrollLock.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery-scrollLock.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery-scrollLock.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery-ui-touch-punch.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery-ui-touch-punch.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery.hoverIntent.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery.hoverIntent.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery.mousewheel.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery.mousewheel.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery.smooth-scroll.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/jquery.smooth-scroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/helpers/source/json2.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/helpers/source/json2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/multiselect/bootstrap-multiselect.js" afterPath="$PROJECT_DIR$/assets/js/utility/multiselect/bootstrap-multiselect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/nanoscroller/jquery.nanoscroller.js" afterPath="$PROJECT_DIR$/assets/js/utility/nanoscroller/jquery.nanoscroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/nanoscroller/jquery.nanoscroller.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/nanoscroller/jquery.nanoscroller.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/scroller/jquery.scroller.js" afterPath="$PROJECT_DIR$/assets/js/utility/scroller/jquery.scroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/underscore/underscore.min.js" afterPath="$PROJECT_DIR$/assets/js/utility/underscore/underscore.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/utility/utility.js" afterPath="$PROJECT_DIR$/assets/js/utility/utility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/ext/jquery-1.12.0.min.js" afterPath="$PROJECT_DIR$/assets/lib/ext/jquery-1.12.0.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/css/font-awesome.css" afterPath="$PROJECT_DIR$/assets/lib/fa/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/assets/lib/fa/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/assets/lib/fa/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/jq.slides/jquery.slides.js" afterPath="$PROJECT_DIR$/assets/lib/jq.slides/jquery.slides.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/jq.slides/jquery.slides.min.js" afterPath="$PROJECT_DIR$/assets/lib/jq.slides/jquery.slides.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/ng/angular-storage.min.js" afterPath="$PROJECT_DIR$/assets/lib/ng/angular-storage.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/ng/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/assets/lib/ng/angular-ui-router.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/ng/angular.min.js" afterPath="$PROJECT_DIR$/assets/lib/ng/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lib/ng/ocLazyLoad.min.js" afterPath="$PROJECT_DIR$/assets/lib/ng/ocLazyLoad.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/.csscomb.json" afterPath="$PROJECT_DIR$/assets/skin/base/.csscomb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/.csslintrc" afterPath="$PROJECT_DIR$/assets/skin/base/.csslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/alerts.less" afterPath="$PROJECT_DIR$/assets/skin/base/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/animate.less" afterPath="$PROJECT_DIR$/assets/skin/base/animate.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/backgrounds.less" afterPath="$PROJECT_DIR$/assets/skin/base/backgrounds.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/badges.less" afterPath="$PROJECT_DIR$/assets/skin/base/badges.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/boxes.less" afterPath="$PROJECT_DIR$/assets/skin/base/boxes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/breadcrumbs.less" afterPath="$PROJECT_DIR$/assets/skin/base/breadcrumbs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/button-groups.less" afterPath="$PROJECT_DIR$/assets/skin/base/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/buttons.less" afterPath="$PROJECT_DIR$/assets/skin/base/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/carousel.less" afterPath="$PROJECT_DIR$/assets/skin/base/carousel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/checkboxes.less" afterPath="$PROJECT_DIR$/assets/skin/base/checkboxes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/close.less" afterPath="$PROJECT_DIR$/assets/skin/base/close.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/code.less" afterPath="$PROJECT_DIR$/assets/skin/base/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/component-animations.less" afterPath="$PROJECT_DIR$/assets/skin/base/component-animations.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/all.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/all.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/content_trays.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/content_trays.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/footer.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/navbar.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/sidebar_actions.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/sidebar_actions.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/sidebar_left.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/sidebar_left.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/sidebar_right.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/sidebar_right.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/components/topbar.less" afterPath="$PROJECT_DIR$/assets/skin/base/components/topbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/dropdowns.less" afterPath="$PROJECT_DIR$/assets/skin/base/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/element-group-custom.less" afterPath="$PROJECT_DIR$/assets/skin/base/element-group-custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/font-awesome.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/glyphicons.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/glyphicons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/icomoon.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/icomoon.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/iconsweets.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/iconsweets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/octicons.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/octicons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/open-sans.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/open-sans.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/stateface.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/stateface.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/fonts/zocial.less" afterPath="$PROJECT_DIR$/assets/skin/base/fonts/zocial.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/forms.less" afterPath="$PROJECT_DIR$/assets/skin/base/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/grid.less" afterPath="$PROJECT_DIR$/assets/skin/base/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/helpers.less" afterPath="$PROJECT_DIR$/assets/skin/base/helpers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/icons.less" afterPath="$PROJECT_DIR$/assets/skin/base/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/ie.less" afterPath="$PROJECT_DIR$/assets/skin/base/ie.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/input-groups.less" afterPath="$PROJECT_DIR$/assets/skin/base/input-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/jumbotron.less" afterPath="$PROJECT_DIR$/assets/skin/base/jumbotron.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/labels.less" afterPath="$PROJECT_DIR$/assets/skin/base/labels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/list-group.less" afterPath="$PROJECT_DIR$/assets/skin/base/list-group.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/media.less" afterPath="$PROJECT_DIR$/assets/skin/base/media.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/alerts.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/backgrounds.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/backgrounds.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/border-radius.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/border-radius.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/buttons.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/center-block.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/center-block.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/checkboxes.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/checkboxes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/clearfix.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/clearfix.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/dropdowns.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/element-groups-custom.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/element-groups-custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/forms.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/gradients.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/gradients.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/grid-framework.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/grid.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/helpers.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/helpers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/hide-text.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/hide-text.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/image.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/image.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/labels.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/labels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/list-group.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/list-group.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/nav-divider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/nav-vertical-align.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/navbar.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/opacity.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/opacity.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/pagination.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/panels.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/panels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/plugins.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/plugins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/progress-bar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/reset-filter.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/resize.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/resize.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/responsive-visibility.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/sidebar.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/sidebar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/size.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/size.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/tab-focus.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/table-row.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/table-row.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/tabs.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/tabs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/text-emphasis.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/text-overflow.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/assets/skin/base/mixins/vendor-prefixes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/modals.less" afterPath="$PROJECT_DIR$/assets/skin/base/modals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/navbar.less" afterPath="$PROJECT_DIR$/assets/skin/base/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/navs.less" afterPath="$PROJECT_DIR$/assets/skin/base/navs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/normalize.less" afterPath="$PROJECT_DIR$/assets/skin/base/normalize.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/pager.less" afterPath="$PROJECT_DIR$/assets/skin/base/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/pages.less" afterPath="$PROJECT_DIR$/assets/skin/base/pages.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/pagination.less" afterPath="$PROJECT_DIR$/assets/skin/base/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/panels.less" afterPath="$PROJECT_DIR$/assets/skin/base/panels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/admindock.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/admindock.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/adminmodals.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/adminmodals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/adminpanels.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/adminpanels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/all_plugins.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/all_plugins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/circlegraphs.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/circlegraphs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/countdown.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/countdown.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/cropper.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/cropper.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/datepicker.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/datepicker.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/dropzone.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/dropzone.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/duallistbox.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/duallistbox.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/expose.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/expose.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/fileupload.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/fileupload.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/flot.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/flot.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/footable.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/footable.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/fullcalendar.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/fullcalendar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/gmap.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/gmap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/highcharts.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/highcharts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/jqueryspinner.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/jqueryspinner.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/jvectormap.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/jvectormap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/magnific.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/magnific.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/markdown.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/markdown.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/markitup.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/markitup.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/maxlength.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/maxlength.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/multiselect.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/multiselect.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/nanoscroller.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/nanoscroller.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/nestable.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/nestable.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/nprogress.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/nprogress.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/pickers.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/pickers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/pnotify.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/pnotify.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/rangeslider.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/rangeslider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/scroller.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/scroller.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/select2.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/select2.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/summernote.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/summernote.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/tagmanager.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/tagmanager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/tagsinput.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/tagsinput.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/treeview.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/treeview.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/plugins/typeahead.less" afterPath="$PROJECT_DIR$/assets/skin/base/plugins/typeahead.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/popovers.less" afterPath="$PROJECT_DIR$/assets/skin/base/popovers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/pricing-tables.less" afterPath="$PROJECT_DIR$/assets/skin/base/pricing-tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/print.less" afterPath="$PROJECT_DIR$/assets/skin/base/print.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/progress-bars.less" afterPath="$PROJECT_DIR$/assets/skin/base/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/responsive-embed.less" afterPath="$PROJECT_DIR$/assets/skin/base/responsive-embed.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/responsive-utilities.less" afterPath="$PROJECT_DIR$/assets/skin/base/responsive-utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/scaffolding.less" afterPath="$PROJECT_DIR$/assets/skin/base/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/settings.less" afterPath="$PROJECT_DIR$/assets/skin/base/settings.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/shared.less" afterPath="$PROJECT_DIR$/assets/skin/base/shared.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/switches.less" afterPath="$PROJECT_DIR$/assets/skin/base/switches.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/table-tools.less" afterPath="$PROJECT_DIR$/assets/skin/base/table-tools.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/tables.less" afterPath="$PROJECT_DIR$/assets/skin/base/tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/tabs.less" afterPath="$PROJECT_DIR$/assets/skin/base/tabs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/theme.less" afterPath="$PROJECT_DIR$/assets/skin/base/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/thumbnails.less" afterPath="$PROJECT_DIR$/assets/skin/base/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/tiles.less" afterPath="$PROJECT_DIR$/assets/skin/base/tiles.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/tooltip.less" afterPath="$PROJECT_DIR$/assets/skin/base/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/type.less" afterPath="$PROJECT_DIR$/assets/skin/base/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/utilities.less" afterPath="$PROJECT_DIR$/assets/skin/base/utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/utility/all.less" afterPath="$PROJECT_DIR$/assets/skin/base/utility/all.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/utility/boxed.less" afterPath="$PROJECT_DIR$/assets/skin/base/utility/boxed.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/utility/demo.less" afterPath="$PROJECT_DIR$/assets/skin/base/utility/demo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/utility/print.less" afterPath="$PROJECT_DIR$/assets/skin/base/utility/print.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/utility/responsive.less" afterPath="$PROJECT_DIR$/assets/skin/base/utility/responsive.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/variables.css" afterPath="$PROJECT_DIR$/assets/skin/base/variables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/variables.less" afterPath="$PROJECT_DIR$/assets/skin/base/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/wells.less" afterPath="$PROJECT_DIR$/assets/skin/base/wells.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/widgets.less" afterPath="$PROJECT_DIR$/assets/skin/base/widgets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/widgets/all.less" afterPath="$PROJECT_DIR$/assets/skin/base/widgets/all.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/widgets/panel-widgets.less" afterPath="$PROJECT_DIR$/assets/skin/base/widgets/panel-widgets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/base/widgets/tile-widgets.less" afterPath="$PROJECT_DIR$/assets/skin/base/widgets/tile-widgets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/css/theme.css" afterPath="$PROJECT_DIR$/assets/skin/default_skin/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/css/theme.css.map" afterPath="$PROJECT_DIR$/assets/skin/default_skin/css/theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/less/custom_changes/custom.less" afterPath="$PROJECT_DIR$/assets/skin/default_skin/less/custom_changes/custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/less/theme.less" afterPath="$PROJECT_DIR$/assets/skin/default_skin/less/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/less/theme_base.less" afterPath="$PROJECT_DIR$/assets/skin/default_skin/less/theme_base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/less/theme_settings.less" afterPath="$PROJECT_DIR$/assets/skin/default_skin/less/theme_settings.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/skin/default_skin/less/theme_variables.less" afterPath="$PROJECT_DIR$/assets/skin/default_skin/less/theme_variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/core.min.js" afterPath="$PROJECT_DIR$/plugins/core.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/address.css" afterPath="$PROJECT_DIR$/plugins/css/address.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/animate.min.css" afterPath="$PROJECT_DIR$/plugins/css/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/plugins/css/bootstrap-colorpicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/bootstrap-datetimepicker.css" afterPath="$PROJECT_DIR$/plugins/css/bootstrap-datetimepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/bootstrap-editable.css" afterPath="$PROJECT_DIR$/plugins/css/bootstrap-editable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/bootstrap-tour.css" afterPath="$PROJECT_DIR$/plugins/css/bootstrap-tour.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/c3.min.css" afterPath="$PROJECT_DIR$/plugins/css/c3.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/core.css" afterPath="$PROJECT_DIR$/plugins/css/core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/daterangepicker.css" afterPath="$PROJECT_DIR$/plugins/css/daterangepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/dropzone.css" afterPath="$PROJECT_DIR$/plugins/css/dropzone.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/footable.core.min.css" afterPath="$PROJECT_DIR$/plugins/css/footable.core.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/fullcalendar.min.css" afterPath="$PROJECT_DIR$/plugins/css/fullcalendar.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/github.css" afterPath="$PROJECT_DIR$/plugins/css/github.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/googlecode.css" afterPath="$PROJECT_DIR$/plugins/css/googlecode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/magnific-popup.css" afterPath="$PROJECT_DIR$/plugins/css/magnific-popup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/nestable.css" afterPath="$PROJECT_DIR$/plugins/css/nestable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/slick.css" afterPath="$PROJECT_DIR$/plugins/css/slick.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/summernote.css" afterPath="$PROJECT_DIR$/plugins/css/summernote.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/tagmanager.css" afterPath="$PROJECT_DIR$/plugins/css/tagmanager.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/typeahead.js-bootstrap.css" afterPath="$PROJECT_DIR$/plugins/css/typeahead.js-bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/css/ui.fancytree.min.css" afterPath="$PROJECT_DIR$/plugins/css/ui.fancytree.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fonts/footable.svg" afterPath="$PROJECT_DIR$/plugins/fonts/footable.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/gmap/jquery.ui.map.min.js" afterPath="$PROJECT_DIR$/plugins/gmap/jquery.ui.map.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/gmap/ui/jquery.ui.map.extensions.min.js" afterPath="$PROJECT_DIR$/plugins/gmap/ui/jquery.ui.map.extensions.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/demo.js" afterPath="$PROJECT_DIR$/plugins/img/mapplic/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/main.js" afterPath="$PROJECT_DIR$/plugins/img/mapplic/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-basement.svg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-basement.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-first.svg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-first.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-ground.svg" afterPath="$PROJECT_DIR$/plugins/img/mapplic/mall/mall-ground.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/img/mapplic/widgets.js" afterPath="$PROJECT_DIR$/plugins/img/mapplic/widgets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/json/ajax-sub2.json" afterPath="$PROJECT_DIR$/plugins/json/ajax-sub2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/json/ajax-tree-local.json" afterPath="$PROJECT_DIR$/plugins/json/ajax-tree-local.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/json/ajax-tree-plain.json" afterPath="$PROJECT_DIR$/plugins/json/ajax-tree-plain.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/json/ajax-tree-plain2.json" afterPath="$PROJECT_DIR$/plugins/json/ajax-tree-plain2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/json/mall.json" afterPath="$PROJECT_DIR$/plugins/json/mall.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/map/gmaps.min.js" afterPath="$PROJECT_DIR$/plugins/map/gmaps.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/script.js" afterPath="$PROJECT_DIR$/plugins/script.js" />
     </list>
     <ignored path="marketplace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -565,41 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="recuperar.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/index/recuperar.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
+      <file leaf-file-name="newpassword.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/index/newpassword.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="72" column="77" lean-forward="false" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
+            <state relative-caret-position="216">
+              <caret line="12" column="68" lean-forward="false" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/admin/admin.view.html">
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.controller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/admin/admin.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="393">
+              <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -608,8 +62,18 @@
       <file leaf-file-name="login.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/login/login.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="558">
+              <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -617,9 +81,18 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>logout</find>
+      <find>slide</find>
+      <find>ui</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -647,10 +120,16 @@
         <option value="$PROJECT_DIR$/app/components/parameter/parameter.service.js" />
         <option value="$PROJECT_DIR$/app/components/parameter/parameter.controller.js" />
         <option value="$PROJECT_DIR$/app/components/parameter/parameter.view.html" />
+        <option value="$PROJECT_DIR$/app/components/admin/admin.service.js" />
         <option value="$PROJECT_DIR$/app/components/admin/admin.view.html" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/components/admin/admin.controller.js" />
+        <option value="$PROJECT_DIR$/app/components/index/index.view.html" />
+        <option value="$PROJECT_DIR$/app/components/login/login.view.html" />
+        <option value="$PROJECT_DIR$/app/components/index/recuperar.view.html" />
+        <option value="$PROJECT_DIR$/app/components/index/newpassword.html" />
         <option value="$PROJECT_DIR$/app/components/login/login.service.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/components/login/login.controller.js" />
       </list>
     </option>
   </component>
@@ -672,9 +151,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="55" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1545" />
-    <option name="height" value="904" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -691,8 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -733,24 +210,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="other" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -773,12 +232,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -788,6 +249,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -821,6 +283,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -857,18 +325,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1483994896910</updated>
-      <workItem from="1485720119528" duration="3014000" />
+      <workItem from="1485720119528" duration="16914000" />
+      <workItem from="1485841302726" duration="659000" />
     </task>
+    <task id="LOCAL-00001" summary="Logout">
+      <created>1485723450661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485723450661</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cambiar password">
+      <created>1485729640074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1485729640074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3014000" />
+    <option name="totallyTimeSpent" value="17573000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-4" width="1545" height="904" extended-state="6" />
+    <frame x="55" y="24" width="1545" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2511327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17216828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -908,6 +392,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Logout" />
+    <MESSAGE value="Cambiar password" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiar password" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -917,41 +406,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/components/parameter/parameter.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/parameter/parameter.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/parameter/parameter.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/admin/user/user.controller.js" />
-    <entry file="file://$PROJECT_DIR$/app/components/admin/user/user.service.js" />
-    <entry file="file://$PROJECT_DIR$/app/templates/admin/admin.service.js" />
     <entry file="file://$PROJECT_DIR$/app/templates/admin/admin.controller.js" />
     <entry file="file://$PROJECT_DIR$/app/components/marketplace/login/login.service.js" />
     <entry file="file://$PROJECT_DIR$/app/components/marketplace/login/login.controller.js" />
@@ -1012,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libraries/validations/validation.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/other/index/index.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1030,21 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/business/business.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/category/category.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="80" column="48" lean-forward="false" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/admin/admin.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1124,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="84" column="115" lean-forward="false" selection-start-line="84" selection-start-column="115" selection-end-line="84" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,7 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
           <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,7 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,46 +589,122 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/skin/default_skin/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/dashboard/dashboard.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libraries/validations/validation.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/category/category.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/admin/admin.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/business/business.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/business/business.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/admin/admin.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/index/index.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/admin/admin.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="268">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
+    <entry file="file://$PROJECT_DIR$/app/components/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="72" column="77" lean-forward="false" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
-          <folding />
+          <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/login/login.controller.js">
+    <entry file="file://$PROJECT_DIR$/app/components/index/newpassword.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="216">
+          <caret line="12" column="68" lean-forward="false" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/login/login.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="558">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/admin/admin.controller.js">
+    <entry file="file://$PROJECT_DIR$/app/components/index/recuperar.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        <state relative-caret-position="126">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
           <folding />
         </state>
       </provider>

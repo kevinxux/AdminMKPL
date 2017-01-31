@@ -42,9 +42,9 @@
 
         $stateProvider
 
-            .state('login', {
-                url: '/login',
-                templateUrl: './app/components/login/login.view.html',
+            .state('index', {
+                abstract: true,
+                templateUrl: './app/components/index/index.view.html',
                 controller: 'LoginController',
                 controllerAs: 'vm',
                 resolve: {
@@ -57,6 +57,21 @@
                         }]);
                     }]
                 }
+            })
+
+            .state('index.login', {
+                url: '/login',
+                templateUrl: './app/components/login/login.view.html'
+            })
+
+            .state('index.recuperar', {
+                url: '/recuperar',
+                templateUrl: './app/components/index/recuperar.view.html'
+            })
+
+            .state('index.newPass', {
+                url: '/nueva-contrasena/{cod}/{isNew}',
+                templateUrl: './app/components/index/newpassword.view.html'
             })
 
             .state('admin', {
