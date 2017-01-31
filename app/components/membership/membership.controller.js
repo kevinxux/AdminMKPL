@@ -10,7 +10,8 @@
         var vm = this;
         Util.active('membership');
 
-        var editing = false;
+        var editing = false,
+            deleting = false;
 
         var isProcessing = false;
 
@@ -36,6 +37,34 @@
             editing = true;
             vm.membership = JSON.parse(JSON.stringify(membership));
             vm.open();
+        }
+
+        vm.preDelete = function(membership) {
+            deleting = true;
+            vm.membership = JSON.parse(JSON.stringify(membership));
+            vm.deleteModalOpen();
+        }
+
+        vm.delete = function() {
+            isProcessing = true;
+
+            var deleteParameters = {
+                idMembresia: vm.membership.idMembresia,
+                token: window.atob(token)
+            }
+
+            MembershipService.del(deleteParameters)
+                .then(function(res) {
+                    isProcessing = false;
+                    if (res.status === 200) {
+                        Jager.success("Se ha eliminado correctamente la membresía");
+                        findAll();
+                    } else {                            
+                        Jager.error(res.data);
+                    }
+                    vm.closeDeleteModal();         
+                });
+
         }
 
         vm.ok = function() {
@@ -86,10 +115,20 @@
             $("#modal-membership").modal("show");            
         }
 
+        vm.deleteModalOpen = function() {
+            $("#delete-membership").modal("show");            
+        }
+
         vm.close = function() {
             editing = false;
             vm.membership = {};
             $("#modal-membership").modal("hide");            
+        }
+
+        vm.closeDeleteModal = function() {
+            deleting = false;
+            vm.membership = {};
+            $("#delete-membership").modal("hide");            
         }
 
     };

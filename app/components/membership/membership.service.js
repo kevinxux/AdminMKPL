@@ -11,11 +11,13 @@
         var ALL_CATEGORIES = "Membresia/ObtenerMembresias";
         var EDIT = "Membresia/ModificarMembresia";
         var SAVE = "Membresia/NuevaMembresia";
+        var DELETE = "Membresia/EliminarMembresia/";
 
         var service = {
             findAll: findAll,
             put: put,
-            save: save
+            save: save,
+            del: del
         };
         return service;
 
@@ -37,6 +39,20 @@
 
         function put(data) {
             return $http.put(BASE_PATH + EDIT, data)
+                .then(getCallResponse)
+                .catch(getCallError);
+
+            function getCallResponse(response) {
+                return response;
+            }
+
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function del(data) {
+            return $http.delete(BASE_PATH + DELETE+data.idMembresia+"/"+data.token)
                 .then(getCallResponse)
                 .catch(getCallError);
 
