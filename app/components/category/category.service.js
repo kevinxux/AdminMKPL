@@ -23,8 +23,17 @@
 
         ////////////////
 
-        function save(data) {
-            return $http.post(BASE_PATH + SAVE, data)
+        function save(data, file) {
+         var fd = new FormData();
+         fd.append('banner', data.banner);
+         fd.append('descripcion',data.descripcion);
+         fd.append('icono',data.icono);
+         fd.append('token',data.token);
+            return $http.post(BASE_PATH + SAVE, fd,
+             {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined}
+             })
                 .then(getCallResponse)
                 .catch(getCallError);
 

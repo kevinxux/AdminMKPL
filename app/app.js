@@ -5,7 +5,8 @@
         .module('marketplace', [
             'ui.router',
             'oc.lazyLoad',
-            'angular-storage'
+            'angular-storage',
+            'file-model'
         ])
         .constant('BASE_PATH', "http://mkpl.azurewebsites.net/api/")
         //.constant('BASE_PATH', "http://localhost:53690/api/")

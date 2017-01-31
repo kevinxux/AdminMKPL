@@ -75,9 +75,9 @@
                 var body = {
                     descripcion: vm.category.descripcion,
                     icono: vm.category.icono,
+                    banner: vm.category.banner,
                     token: window.atob(token)
                 }
-
                 CategoryService.save(body)
                     .then(function(res) {
                         isProcessing = false;
