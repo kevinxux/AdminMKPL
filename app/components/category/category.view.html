@@ -50,7 +50,8 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-6 col-sm-offset-3">
-								<span class="button btn btn-primary btn-file btn-block"><span class="fileupload-new"> <i class="fa fa-image"></i> Selecciona una imagen</span>
+								<span class="button btn btn-primary btn-file btn-block"><span ng-if="vm.category.bannerUrl" class="fileupload-new"> <i class="fa fa-image"></i> Cambiar imagen</span>
+								<span ng-if="!vm.category.bannerUrl" class="fileupload-new"> <i class="fa fa-image"></i> Selecciona una imagen</span>
 		                        <input type="file" id="fileUpload" file-model="vm.category.banner" title="{{vm.titleFileUpload}}" accept=".png, .jpg, .jpeg" /></span>
 							</div>
 						</div>
