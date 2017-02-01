@@ -41,13 +41,20 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-horizontal">
-						<div class="form-group">
-							<input type="file" id="fileUpload" file-model="vm.category.banner" title="{{vm.titleFileUpload}}" accept=".png, .jpg, .jpeg" class="col-sm-6"
-								   style="height:34px !important; padding-left: 0px !important; padding-right:0px !important;" />
+						<div class="row">
+							<div class="col-sm-offset-2 col-sm-8">
+								<div class="form-group text-center" ng-if="vm.showdelete();">
+									<img src="{{vm.category.bannerUrl}}" style="width:304px;height:228px;" class="responsive-img" />
+								</div>
+							</div>
 						</div>
-						<div class="form-group" ng-if="vm.showdelete();">
-							<img src="{{vm.category.bannerUrl}}" style="width:304px;height:228px;"/>
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<span class="button btn btn-primary btn-file btn-block"><span class="fileupload-new"> <i class="fa fa-image"></i> Selecciona una imagen</span>
+		                        <input type="file" id="fileUpload" file-model="vm.category.banner" title="{{vm.titleFileUpload}}" accept=".png, .jpg, .jpeg" /></span>
+							</div>
 						</div>
+						<br><br>
 						<div class="form-group">
 							<label for="nombre" class="col-lg-3 control-label">Nombre</label>
 							<div class="col-lg-8">
