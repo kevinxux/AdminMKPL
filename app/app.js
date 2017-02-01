@@ -6,7 +6,8 @@
             'ui.router',
             'oc.lazyLoad',
             'angular-storage',
-            'file-model'
+            'file-model',
+            'chart.js'
         ])
         .constant('BASE_PATH', "http://mkpl.azurewebsites.net/api/")
         //.constant('BASE_PATH', "http://localhost:53690/api/")
