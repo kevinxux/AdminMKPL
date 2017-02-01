@@ -48,10 +48,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha actualizado correctamente el perfil");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             } else {
             
@@ -66,10 +66,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha registrado el perfil");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             }            
         }

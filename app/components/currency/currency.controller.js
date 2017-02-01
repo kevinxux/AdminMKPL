@@ -50,10 +50,10 @@
                     if (res.status === 200) {
                         Jager.success(res.data);
                         findAll();
+                        vm.close();
                     } else {
                         Jager.error(res.data);
                     }
-                    vm.close();
                 });
 
         }
@@ -68,10 +68,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha actualizado correctamente la moneda");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             } else {
             
@@ -88,10 +88,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha registrado la moneda");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             }            
         }

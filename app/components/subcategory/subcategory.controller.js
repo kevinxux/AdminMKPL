@@ -61,10 +61,10 @@
                     if (res.status === 200) {
                         Jager.success(res.data);
                         vm.getSubcategories();
+                        vm.close();
                     } else {
                         Jager.error(res.data);
                     }
-                    vm.close();
                 });
 
         };
@@ -79,10 +79,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha actualizado correctamente la Subcategoría");
                             vm.getSubcategories();
+                            vm.close();
                         } else {
                             Jager.error(res.data);
                         }
-                        vm.close();
                     });
             } else {
                 if(vm.categorySelect) {
@@ -99,10 +99,10 @@
                             if (res.status === 200) {
                                 Jager.success("Se ha registrado la Subcategoría");
                                 vm.getSubcategories();
+                                vm.close();
                             } else {
                                 Jager.error(res.data);
                             }
-                            vm.close();
                         });
                 }else{
                     Jager.error("No ha seleccionado una categoria");

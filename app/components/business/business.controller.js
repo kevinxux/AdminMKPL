@@ -80,10 +80,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha actualizado correctamente la empresa");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             } else {
             
@@ -109,10 +109,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha registrado la empresa");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             }            
         }
