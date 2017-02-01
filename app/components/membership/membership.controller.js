@@ -57,10 +57,10 @@
                     if (res.status === 200) {
                         Jager.success("Se ha eliminado correctamente la membresía");
                         findAll();
+                        vm.close();    
                     } else {                            
                         Jager.error(res.data);
                     }
-                    vm.close();    
                 });
 
         }
@@ -75,10 +75,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha actualizado correctamente la membresía");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             } else {
             
@@ -101,10 +101,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha registrado la membresía");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             }            
         }

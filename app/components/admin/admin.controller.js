@@ -50,7 +50,6 @@
                     if (res.status === 200) {
                         Jager.success("Se actualizo correctamente");
                         vm.password = {};
-
                         $("#cambiarContrasenaModal").modal("hide");
                     } else {
                         Jager.error(res.data);

@@ -25,8 +25,7 @@
 	        SubTypeCombinationService.findAll(vm.TypeCombination)
 	            .then(function(res) {
 	                if (res.status === 200) {
-	                    vm.subTypeCombinations = res.data;
-	                    ;
+	                    vm.subTypeCombinations = res.data;	                    
 	                } else {
 	                	console.error(res.data);
 	                }
@@ -65,10 +64,10 @@
                     if (res.status === 200) {
                         Jager.success(res.data);
                         findAll();
+                        vm.close();
                     } else {
                         Jager.error(res.data);
                     }
-                    vm.close();
                 });
 
         }
@@ -82,10 +81,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha actualizado correctamente el subtipo de combinación.");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             } else {
             
@@ -101,10 +100,10 @@
                         if (res.status === 200) {
                             Jager.success("Se ha registrado el subtipo de combinación");
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             }            
         }

@@ -48,10 +48,10 @@
                         if (res.status === 200) {
                             Jager.success(res.data);
                             findAll();
+                            vm.close();         
                         } else {                            
                             Jager.error(res.data);
                         }
-                        vm.close();         
                     });
             }
         }
