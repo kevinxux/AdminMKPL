@@ -101,7 +101,7 @@
 
         vm.close = function() {
             editing = false;
-            vm.couriersentity = {};
+            vm.courierentity = {};
             $("#modal-courierentity").modal("hide");
         };
     };
