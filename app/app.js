@@ -336,6 +336,22 @@
                     }]
                 }
             })
+            .state('admin.couriersEntity', {
+                url: '/couriers-entity',
+                templateUrl: './app/components/couriersentity/couriersentity.view.html',
+                controller: 'CouriersEntityController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/couriersentity/couriersentity.controller.js',
+                                './app/components/couriersentity/couriersentity.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
 
     };
 

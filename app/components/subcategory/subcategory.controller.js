@@ -92,7 +92,6 @@
                         descripcion: vm.subcategory.descripcion,
                         token: window.atob(token)
                     };
-                    console.log(body);
                     SubcategoryService.save(body)
                         .then(function(res) {
                             isProcessing = false;

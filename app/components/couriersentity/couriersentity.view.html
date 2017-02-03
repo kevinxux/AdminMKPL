@@ -1,0 +1,85 @@
+<header id="topbar" class="alt">
+    <div class="topbar-left pull-left">
+        <h1 class="mn">Couriers por Empresa</h1><span class="text-shady-lady fs15">Gestión de Couriers por Empresa</span>
+    </div>
+    <div class="topbar-right">
+        <div class="btn-group">
+            <button type="button" data-ng-click="vm.open();" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>
+</header>
+<section id="content" class="table-layout animated fadeIn">
+    <div class="sub-content col-sm-6">
+        <table class="table">
+            <thead>
+            <tr class="primary">
+                <th>Id</th>
+                <th>Tipo</th>
+                <th>Nombre</th>
+                <th>Dias de Entrega</th>
+                <th>Costo</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-ng-repeat="c in vm.couriersentities">
+                <td data-ng-bind="c.idCourierxEmpresa"></td>
+                <td data-ng-bind="c.idTipoCourier"></td>
+                <td data-ng-bind="c.descripcionCourier"></td>
+                <td data-ng-bind="c.diasEntrega"></td>
+                <td data-ng-bind="c.costo"></td>
+                <td><i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<div class="modal fade" id="modal-courierentity" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-ng-click="vm.close();" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Gestión de Courier por Empresa</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="idtipoCourier" class="col-lg-3 control-label">Tipo Courier</label>
+                        <div class="col-lg-8">
+                            <div class="bs-component">
+                                <select class="form-control"
+                                        name="idtipoCourier"
+                                        id="idtipoCourier"
+                                        ng-model="vm.courierentity.idtipoCourier"
+                                        ng-options="t.idTipoCourier as t.descripcion for t in vm.types"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="diasEntrega" class="col-lg-3 control-label">Dias de Entrega</label>
+                        <div class="col-lg-8">
+                            <div class="bs-component">
+                                <input data-ng-model="vm.courierentity.diasEntrega" id="diasEntrega" type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="costo" class="col-lg-3 control-label">Costo</label>
+                        <div class="col-lg-8">
+                            <div class="bs-component">
+                                <input data-ng-model="vm.courierentity.costo" id="costo" type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-ng-click="vm.close();" >Cerrar</button>
+                <button type="button" class="btn btn-primary" data-ng-click="vm.ok()" data-ng-bind="vm.buttonPopup();"></button>
+                <button type="button" class="btn btn-warning" data-ng-click="vm.remove();" ng-if="vm.showdelete();">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
