@@ -352,6 +352,22 @@
                     }]
                 }
             })
+            .state('admin.establishment', {
+                url: '/establishment',
+                templateUrl: './app/components/establishment/establishment.view.html',
+                controller: 'EstablishmentController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/establishment/establishment.controller.js',
+                                './app/components/establishment/establishment.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
 
     };
 
