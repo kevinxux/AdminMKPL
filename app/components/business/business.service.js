@@ -13,17 +13,31 @@
         var SAVE = "Entidad/NuevaEntidad";
         var DOC_TYPES = "Combo/ListarTipoDocumento";
         var ENTITY_TYPES = "TipoEntidad/ObtenerTipoEntidades";
+        var UBIGEO = "Combo/ListarUbigeo";
 
         var service = {
             findAll: findAll,
             put: put,
             save: save,
             documentTypes: documentTypes,
-            entityTypes: entityTypes
+            entityTypes: entityTypes,
+            ubigeo: ubigeo
         };
         return service;
 
         ////////////////
+
+        function ubigeo() {
+            return $http.get(BASE_PATH + UBIGEO)
+                .then(getCallResponse)
+                .catch(getCallError);
+            function getCallResponse(response) {
+                return response;
+            }
+            function getCallError(error) {
+                return error;
+            }
+        }
 
         function entityTypes() {
             return $http.get(BASE_PATH+ENTITY_TYPES)
@@ -81,8 +95,8 @@
             }
         }
 
-        function findAll() {
-           return $http.get(BASE_PATH + ALL_BUSINESS)
+        function findAll(token) {
+           return $http.get(BASE_PATH + ALL_BUSINESS+ "/" + window.atob(token))
                 .then(getCallResponse)
                 .catch(getCallError);
 

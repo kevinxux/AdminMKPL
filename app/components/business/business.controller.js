@@ -16,6 +16,18 @@
 
         var token = store.get('X-MKPL-DATA');
         
+        ubigeo();
+        function ubigeo() {
+            BusinessService.ubigeo()
+                .then(function (res) {
+                    if (res.status === 200) {
+                        vm.departamentos = res.data;                            
+                    } else {
+                        Jager.error(res.data);
+                    }
+                });
+        }
+
         documentTypes();
         function documentTypes() {
             BusinessService.documentTypes()
@@ -27,9 +39,17 @@
                 })
         };
 
+        vm.setProvincias = function () {
+          vm.provincias = vm.business.departamento.provincias;
+        };
+
+        vm.setDistritos = function () {
+          vm.distritos = vm.business.provincia.distritos;          
+        };
+
         entityTypes();
         function entityTypes() {
-            BusinessService.entityTypes()
+            BusinessService.entityTypes(token)
                 .then(function(res) {
                     if (res.status === 200) {
                         vm.entityTypes = res.data;
@@ -38,7 +58,7 @@
         };
 
         function findAll() {                                    
-	        BusinessService.findAll()
+	        BusinessService.findAll(token)
 	            .then(function(res) {
 	                if (res.status === 200) {
 	                    vm.allBusiness = res.data;
@@ -58,8 +78,7 @@
             });     
             return value;       
         }
-
-
+        
         vm.buttonPopup = function() {
             return editing ? "Editar" : "Agregar";
         }
@@ -67,12 +86,21 @@
         vm.preEdit = function(business) {
             editing = true;
             vm.business = JSON.parse(JSON.stringify(business));
+            vm.business.departamento = {};
+            vm.business.provincia = {};
+            vm.business.distrito = {};
+            vm.business.departamento.idUbigeo = vm.business.idDepartamento;
+            vm.business.provincia.idUbigeo = vm.business.idProvincia;
+            vm.business.distrito.idUbigeo = vm.business.idDistrito;
             vm.open();
         }
 
         vm.ok = function() {
             isProcessing = true;
             if (editing) {
+                vm.business.idDepartamento = vm.business.departamento.idUbigeo;
+                vm.business.idProvincia = vm.business.provincia.idUbigeo;
+                vm.business.idDistrito = vm.business.distrito.idUbigeo;
                 vm.business.token = window.atob(token);
                 BusinessService.put(vm.business)
                     .then(function(res) {
@@ -89,12 +117,13 @@
             
                 var body = {
                     descripcion: vm.business.descripcion,
-                    token: window.atob(token),
-                    idTipoDocumento: vm.business.idTipoDocumento,
+                    token: window.atob(token),                    
                     numeroDocumento: vm.business.numeroDocumento,
                     razonSocial: vm.business.razonSocial,
                     nombreComercial: vm.business.nombreComercial,
-                    idUbigeo: vm.business.idUbigeo,
+                    idDepartamento: vm.business.departamento.idUbigeo,
+                    idProvincia: vm.business.provincia.idUbigeo,
+                    idDistrito: vm.business.distrito.idUbigeo,
                     domicilioFiscal: vm.business.domicilioFiscal,
                     idTipoEntidad: vm.business.idTipoEntidad,
                     correo: vm.business.correo, 
@@ -118,7 +147,26 @@
         }
 
         vm.open = function() {
-            $("#modal-business").modal("show");      
+            if (editing) {
+                for(var i = 0; i < vm.departamentos.length; i++){
+                    if(vm.business.idDepartamento == vm.departamentos[i].idUbigeo){
+                        vm.business.departamento = vm.departamentos[i];
+                        vm.setProvincias();
+                        for(var j = 0; j < vm.departamentos[i].provincias.length; j++){
+                            if(vm.business.idProvincia == vm.departamentos[i].provincias[j].idUbigeo){
+                                vm.business.provincia = vm.departamentos[i].provincias[j];
+                                vm.setDistritos();
+                                for(var k = 0; k < vm.departamentos[i].provincias[j].distritos.length; k++){
+                                    if(vm.business.idDistrito == vm.departamentos[i].provincias[j].distritos[k].idUbigeo){
+                                        vm.business.distrito = vm.departamentos[i].provincias[j].distritos[k];
+                                        $("#modal-business").modal("show");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
         }
 
         vm.close = function() {
