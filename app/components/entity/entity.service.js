@@ -7,23 +7,27 @@
 
     /* @ngInject */
     function EntityService(BASE_PATH, $http) {
-        var ALL_TYPES = "TipoCombinacion/ObtenerTipoCombinaciones";
-        var EDIT = "TipoCombinacion/ModificarTipoCombinacion";
-        var SAVE = "TipoCombinacion/NuevaTipoCombinacion";
-        var REMOVE = "TipoCombinacion/EliminarTipoCombinacion";
+        var GET = "Entidad/ObtenerEntidadporID";
+        var EDIT = "Entidad/ModificarEntidadAdministrador";
+        var IMAGE = "Entidad/EnviarImagenEntidad";
+        var UBIGEO = "Combo/ListarUbigeo";
 
         var service = {
-            findAll: findAll,
+            get: get,
             put: put,
-            save: save,
-            remove: remove
+            image: image,
+            ubigeo: ubigeo     
         };
+
         return service;
 
         ////////////////
-
-        function save(data) {
-            return $http.post(BASE_PATH + SAVE, data)
+        //  GET /api/Entidad/ObtenerEntidadporID/{token}                        
+        // /api/Entidad/ModificarEntidadAdministrador                        
+        // /api/Entidad/EnviarImagenEntidad
+        
+        function get(token) {
+            return $http.get(BASE_PATH + GET + "/" + token)
                 .then(getCallResponse)
                 .catch(getCallError);
 
@@ -50,8 +54,8 @@
             }
         }
 
-        function findAll() {
-           return $http.get(BASE_PATH + ALL_TYPES)
+        function image(data) {
+            return $http.put(BASE_PATH + IMAGE, data)
                 .then(getCallResponse)
                 .catch(getCallError);
 
@@ -63,16 +67,16 @@
                 return error;
             }
         }
-        function remove(data)
-        {
-            return $http.delete(BASE_PATH + REMOVE
-                    +   "/" +   data.idTipoCombinacion
-                    +   "/" +   data.token)
-                        .then(getCallResponse)
-                        .catch(getCallError);
+
+        function ubigeo() {
+            return $http.get(BASE_PATH + UBIGEO)
+                .then(getCallResponse)
+                .catch(getCallError);
+
             function getCallResponse(response) {
                 return response;
             }
+
             function getCallError(error) {
                 return error;
             }

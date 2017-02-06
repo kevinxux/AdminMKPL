@@ -3,105 +3,93 @@
 
     angular
         .module('marketplace')
-        .controller('TypeCombinationController', TypeCombinationController);
+        .controller('EntityController', EntityController);
 
     /* @ngInject */
-    function TypeCombinationController(Util, TypeCombinationService, Jager, store) {
+    function EntityController(Util, EntityService, Jager, store) {
         var vm = this;
-        Util.active('typecombination');
-
-        var editing = false;
+        Util.active('entity');
 
         var isProcessing = false;
-
         var token = store.get('X-MKPL-DATA');
+        vm.depaIndex = '', 
+        vm.provIndex = '', 
+        vm.distIndex = '',
+        vm.provincias = [],
+        vm.distritos = [];
 
-        findAll();
-        function findAll() {                              
-	        TypeCombinationService.findAll()
+        vm.fillProvincia = function () {
+            vm.provincias = vm.ubigeo[vm.depaIndex].provincias;
+            vm.entity.idDepartamento = vm.ubigeo[vm.depaIndex].idUbigeo;
+        }
+
+        vm.fillDistrito = function () {
+            vm.distritos = vm.provincias[vm.provIndex].distritos;
+            vm.entity.idProvincia = vm.provincias[vm.provIndex].idUbigeo;
+        }
+
+        ubigeo();
+        function ubigeo() {                              
+            EntityService.ubigeo()
+                .then(function(res) {
+                    if (res.status === 200) {
+                        vm.ubigeo = res.data;
+                    } else {
+                        console.error(res.data);
+                    }
+                })            
+        };
+        setTimeout(function() {
+            get();
+        }, 1000);
+        function get() {                              
+	        EntityService.get(window.atob(token))
 	            .then(function(res) {
 	                if (res.status === 200) {
-	                    vm.typeCombinations = res.data;
+	                    vm.entity = res.data;
+                        for (var i = 0; i < vm.ubigeo.length; i++) {
+                            if (vm.ubigeo[i].idUbigeo == vm.entity.idDepartamento) {
+                                vm.depaIndex = i; 
+                            }
+                        }
+                        for (var i = 0; i < vm.ubigeo[vm.depaIndex].provincias.length; i++) {
+                            if (vm.ubigeo[vm.depaIndex].provincias[i].idUbigeo == vm.entity.idProvincia) {
+                                vm.provIndex = i; 
+                            }
+                        }
+                        
+                        for (var i = 0; i < vm.ubigeo[vm.depaIndex].provincias[vm.provIndex].distritos.length; i++) {
+                            if (vm.ubigeo[vm.depaIndex].provincias[vm.provIndex].distritos[i].idUbigeo == vm.entity.idDistrito) {
+                                vm.distIndex = i; 
+                                document.getElementById('distrito').value = i;
+                            }
+                        }
+                        console.log(vm.depaIndex, vm.provIndex, vm.distIndex);
+
 	                } else {
 	                	console.error(res.data);
 	                }
-	            })            
+	            })       
+            vm.fillProvincia();     
+            vm.fillDistrito();     
         };
 
-        vm.buttonPopup = function() {
-            return editing ? "Editar" : "Agregar";
-        }
-        vm.showdelete = function(){
-            return editing;
-        }
-        vm.preEdit = function(typeCombination) {
-            editing = true;
-            vm.typeCombination = JSON.parse(JSON.stringify(typeCombination));
-            vm.open();
-        }
-        vm.remove = function(){
+       
+
+  
+        vm.ok = function() {
             isProcessing = true;
-            vm.typeCombination.token = window.atob(token);
-            TypeCombinationService.remove(vm.typeCombination)
+            vm.entity.token = window.atob(token);
+            EntityService.put(vm.entity)
                 .then(function(res) {
                     isProcessing = false;
                     if (res.status === 200) {
-                        Jager.success(res.data);
-                        findAll();
-                        vm.close();
-                    } else {
+                        Jager.success("Se ha actualizado correctamente el tipo de combinación.");
+                    } else {                            
                         Jager.error(res.data);
                     }
                 });
-
         }
-        vm.ok = function() {
-            isProcessing = true;
-            if (editing) {
-                vm.typeCombination.token = window.atob(token);
-                TypeCombinationService.put(vm.typeCombination)
-                    .then(function(res) {
-                        isProcessing = false;
-                        if (res.status === 200) {
-                            Jager.success("Se ha actualizado correctamente el tipo de combinación.");
-                            findAll();
-                            vm.close();         
-                        } else {                            
-                            Jager.error(res.data);
-                        }
-                    });
-            } else {
-            
-                var body = {
-                    descripcion: vm.typeCombination.descripcion,
-                    visualizacionWeb: vm.typeCombination.visualizacionWeb,
-                    token: window.atob(token)
-                }
-
-                TypeCombinationService.save(body)
-                    .then(function(res) {
-                        isProcessing = false;
-                        if (res.status === 200) {
-                            Jager.success("Se ha registrado el tipo de combinación");
-                            findAll();
-                            vm.close();         
-                        } else {                            
-                            Jager.error(res.data);
-                        }
-                    });
-            }            
-        }
-
-        vm.open = function() {
-            $("#modal-typecombination").modal("show");      
-        }
-
-        vm.close = function() {
-            editing = false;
-            vm.typeCombination = {};
-            $("#modal-typecombination").modal("hide");    
-        }
-
     };
 
 })();

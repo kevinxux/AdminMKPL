@@ -250,7 +250,22 @@
                     }]
                 }
             })
-
+            .state('admin.entity', {
+                url: '/entity/entity',
+                templateUrl: './app/components/entity/entity.view.html',
+                controller: 'EntityController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/entity/entity.controller.js',
+                                './app/components/entity/entity.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
             .state('admin.entity-type', {
                 url: '/entity/type',
                 templateUrl: './app/components/entity-type/entity-type.view.html',

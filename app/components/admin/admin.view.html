@@ -49,6 +49,12 @@
       <span class="sidebar-title">Inicio</span>
     </a>
   </li>
+  <li id="entity" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.entity">
+      <span class="fa fa-institution"></span>
+      <span class="sidebar-title">Entidad</span>
+    </a>
+  </li>
   <li id="product" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
     <a ui-sref="admin.product">
       <span class="fa fa-gift"></span>
