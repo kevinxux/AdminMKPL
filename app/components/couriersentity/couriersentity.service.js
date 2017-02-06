@@ -3,69 +3,27 @@
 
     angular
         .module('marketplace')
-        .factory('BusinessService', BusinessService);
+        .factory('CouriersEntityService', CouriersEntityService);
 
     /* @ngInject */
-    function BusinessService(BASE_PATH, $http) {
+    function CouriersEntityService(BASE_PATH, $http) {
 
-        var ALL_BUSINESS = "Entidad/ObtenerEntidades";
-        var EDIT = "Entidad/ModificarEntidad";
-        var SAVE = "Entidad/NuevaEntidad";
-        var DOC_TYPES = "Combo/ListarTipoDocumento";
-        var ENTITY_TYPES = "TipoEntidad/ObtenerTipoEntidades";
-        var UBIGEO = "Combo/ListarUbigeo";
+        var ALL = "CourierxEmpresa/ObtenerCourierxEmpresas/";
+        var EDIT = "CourierxEmpresa/ModificarCourierxEmpresa";
+        var SAVE = "CourierxEmpresa/NuevaCourierxEmpresa";
+        var REMOVE = "CourierxEmpresa/EliminarCourierxEmpresa";
+        var TYPES = "TipoCourier/ObtenerTipoCouriers";
 
         var service = {
             findAll: findAll,
             put: put,
             save: save,
-            documentTypes: documentTypes,
-            entityTypes: entityTypes,
-            ubigeo: ubigeo
+            remove: remove,
+            types:types
         };
         return service;
 
         ////////////////
-
-        function ubigeo() {
-            return $http.get(BASE_PATH + UBIGEO)
-                .then(getCallResponse)
-                .catch(getCallError);
-            function getCallResponse(response) {
-                return response;
-            }
-            function getCallError(error) {
-                return error;
-            }
-        }
-
-        function entityTypes() {
-            return $http.get(BASE_PATH+ENTITY_TYPES)
-                .then(getCallResponse)
-                .catch(getCallError);
-
-            function getCallResponse(response) {
-                return response;
-            }
-
-            function getCallError(error) {
-                return error;
-            }
-        }
-
-        function documentTypes() {
-            return $http.post(BASE_PATH+DOC_TYPES)
-                .then(getCallResponse)
-                .catch(getCallError);
-
-            function getCallResponse(response) {
-                return response;
-            }
-
-            function getCallError(error) {
-                return error;
-            }
-        }
 
         function save(data) {
             return $http.post(BASE_PATH + SAVE, data)
@@ -96,7 +54,7 @@
         }
 
         function findAll(token) {
-           return $http.get(BASE_PATH + ALL_BUSINESS+ "/" + window.atob(token))
+            return $http.get(BASE_PATH + ALL + token)
                 .then(getCallResponse)
                 .catch(getCallError);
 
@@ -104,6 +62,32 @@
                 return response;
             }
 
+            function getCallError(error) {
+                return error;
+            }
+        }
+        function remove(data)
+        {
+            return $http.delete(BASE_PATH + REMOVE
+                +   "/" +   data.idCourierxEmpresa
+                +   "/" +   data.token)
+                .then(getCallResponse)
+                .catch(getCallError);
+            function getCallResponse(response) {
+                return response;
+            }
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function types() {
+            return $http.get(BASE_PATH + TYPES)
+                .then(getCallResponse)
+                .catch(getCallError);
+            function getCallResponse(response) {
+                return response;
+            }
             function getCallError(error) {
                 return error;
             }
