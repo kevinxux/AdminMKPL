@@ -16,6 +16,23 @@
 
         var token = store.get('X-MKPL-DATA');
         
+        init();
+        function init() {
+            $("#fechaNacimiento").datepicker({
+              prevText: '<i class="fa fa-chevron-left"></i>',
+              nextText: '<i class="fa fa-chevron-right"></i>',
+              showButtonPanel: false,
+              beforeShow: function (input, inst) {
+                var newclass = 'admin-form';
+                var themeClass = $(this).parents('.admin-form').attr('class');
+                var smartpikr = inst.dpDiv.parent();
+                if (!smartpikr.hasClass(themeClass)) {
+                  inst.dpDiv.wrap('<div class="' + themeClass + '"></div>');
+                }
+              }
+            });
+        }
+
         ubigeo();
         function ubigeo() {
             BusinessService.ubigeo()
@@ -61,7 +78,7 @@
 	        BusinessService.findAll(token)
 	            .then(function(res) {
 	                if (res.status === 200) {
-	                    vm.allBusiness = res.data;
+	                    vm.allBusiness = res.data;                        
 	                } else {
 	                	console.error(res.data);
 	                }
@@ -79,8 +96,61 @@
             return value;       
         }
         
+        vm.assignUser = function() {
+            vm.user.idEntidad = vm.tempBusinessId;
+            vm.user.token = window.atob(token);
+            BusinessService.assign(vm.user)
+                .then(function(res) {                   
+                    if (res.status === 200) {
+                        Jager.success("Se ha asignado el usuario");
+                        findAll();
+                        vm.closeUser();         
+                    } else {                            
+                        Jager.error(res.data);
+                    }
+                });
+        }
+
+        vm.unassignUser = function() {
+            var body = {
+                idEntidad: vm.tempBusinessId,
+                token: window.atob(token)
+            };
+            
+            BusinessService.unassign(body)
+                .then(function(res) {                   
+                    if (res.status === 200) {
+                        Jager.success("Se ha desasignado el usuario");
+                        findAll();
+                        vm.closeUser();         
+                    } else {                            
+                        Jager.error(res.data);
+                    }
+                });
+        }
+
         vm.buttonPopup = function() {
             return editing ? "Editar" : "Agregar";
+        }
+
+        vm.preEditUser = function(business) {
+            editing = true;
+            vm.tempBusinessId = business.idEntidad;
+            BusinessService.findAdminUser(token, business.idEntidad)
+                .then(function(res) {
+                    if (res.status === 200) {
+                        if (res.data == null) {
+                            vm.user = {};
+                            vm.hasUser = false;
+                        } else {
+                            vm.user = res.data;
+                            vm.hasUser = true;
+                        }
+                        vm.openUser();
+                    } else {
+                        console.error(res.data);
+                    }
+                })       
         }
 
         vm.preEdit = function(business) {
@@ -146,7 +216,11 @@
             }            
         }
 
-        vm.open = function() {
+        vm.openUser = function() {
+            $("#modal-user").modal("show");
+        }
+
+        vm.open = function() {            
             if (editing) {
                 for(var i = 0; i < vm.departamentos.length; i++){
                     if(vm.business.idDepartamento == vm.departamentos[i].idUbigeo){
@@ -166,13 +240,22 @@
                         }
                     }
                 }
-            }   
+            } else {
+                $("#modal-business").modal("show");
+            }
         }
 
         vm.close = function() {
             editing = false;
             vm.business = {};
             $("#modal-business").modal("hide");    
+        }
+
+        vm.closeUser = function() {
+            editing = false;
+            vm.user = {};
+            vm.tempBusinessId = null;
+            $("#modal-user").modal("hide");    
         }
 
     };

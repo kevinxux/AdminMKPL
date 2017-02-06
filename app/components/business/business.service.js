@@ -14,6 +14,9 @@
         var DOC_TYPES = "Combo/ListarTipoDocumento";
         var ENTITY_TYPES = "TipoEntidad/ObtenerTipoEntidades";
         var UBIGEO = "Combo/ListarUbigeo";
+        var USER_ADMIN_INFO = "Usuario/ObtenerDataAdministrador";
+        var ASSIGN = "Usuario/NuevoUsuarioAdministradorEmpresa";
+        var UNASSIGN = "Usuario/DesasignarUsuarioAdministradorEmpresa";
 
         var service = {
             findAll: findAll,
@@ -21,11 +24,55 @@
             save: save,
             documentTypes: documentTypes,
             entityTypes: entityTypes,
-            ubigeo: ubigeo
+            ubigeo: ubigeo,
+            findAdminUser: findAdminUser,
+            assign: assign,
+            unassign: unassign
         };
         return service;
 
         ////////////////
+
+         function unassign(data) {
+            return $http.post(BASE_PATH + UNASSIGN, data)
+                .then(getCallResponse)
+                .catch(getCallError);
+
+            function getCallResponse(response) {
+                return response;
+            }
+
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function assign(data) {
+            return $http.post(BASE_PATH + ASSIGN, data)
+                .then(getCallResponse)
+                .catch(getCallError);
+
+            function getCallResponse(response) {
+                return response;
+            }
+
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function findAdminUser(token, entidad) {
+            return $http.get(BASE_PATH + USER_ADMIN_INFO + "/" + window.atob(token) + "/" +
+                             entidad)
+                .then(getCallResponse)
+                .catch(getCallError);
+            function getCallResponse(response) {
+                return response;
+            }
+            function getCallError(error) {
+                return error;
+            }
+        }
 
         function ubigeo() {
             return $http.get(BASE_PATH + UBIGEO)
