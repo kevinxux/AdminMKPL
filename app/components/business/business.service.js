@@ -13,17 +13,78 @@
         var SAVE = "Entidad/NuevaEntidad";
         var DOC_TYPES = "Combo/ListarTipoDocumento";
         var ENTITY_TYPES = "TipoEntidad/ObtenerTipoEntidades";
+        var UBIGEO = "Combo/ListarUbigeo";
+        var USER_ADMIN_INFO = "Usuario/ObtenerDataAdministrador";
+        var ASSIGN = "Usuario/NuevoUsuarioAdministradorEmpresa";
+        var UNASSIGN = "Usuario/DesasignarUsuarioAdministradorEmpresa";
 
         var service = {
             findAll: findAll,
             put: put,
             save: save,
             documentTypes: documentTypes,
-            entityTypes: entityTypes
+            entityTypes: entityTypes,
+            ubigeo: ubigeo,
+            findAdminUser: findAdminUser,
+            assign: assign,
+            unassign: unassign
         };
         return service;
 
         ////////////////
+
+         function unassign(data) {
+            return $http.post(BASE_PATH + UNASSIGN, data)
+                .then(getCallResponse)
+                .catch(getCallError);
+
+            function getCallResponse(response) {
+                return response;
+            }
+
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function assign(data) {
+            return $http.post(BASE_PATH + ASSIGN, data)
+                .then(getCallResponse)
+                .catch(getCallError);
+
+            function getCallResponse(response) {
+                return response;
+            }
+
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function findAdminUser(token, entidad) {
+            return $http.get(BASE_PATH + USER_ADMIN_INFO + "/" + window.atob(token) + "/" +
+                             entidad)
+                .then(getCallResponse)
+                .catch(getCallError);
+            function getCallResponse(response) {
+                return response;
+            }
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function ubigeo() {
+            return $http.get(BASE_PATH + UBIGEO)
+                .then(getCallResponse)
+                .catch(getCallError);
+            function getCallResponse(response) {
+                return response;
+            }
+            function getCallError(error) {
+                return error;
+            }
+        }
 
         function entityTypes() {
             return $http.get(BASE_PATH+ENTITY_TYPES)
@@ -81,8 +142,8 @@
             }
         }
 
-        function findAll() {
-           return $http.get(BASE_PATH + ALL_BUSINESS)
+        function findAll(token) {
+           return $http.get(BASE_PATH + ALL_BUSINESS+ "/" + window.atob(token))
                 .then(getCallResponse)
                 .catch(getCallError);
 

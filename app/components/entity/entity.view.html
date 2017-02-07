@@ -1,0 +1,53 @@
+<header id="topbar" class="alt">
+	<div class="topbar-left pull-left">
+		<h1 class="mn">Entidad {{vm.entity.razonSocial}}</h1><span class="text-shady-lady fs15">Gestión de la entidad</span><br><span class="label label-success">{{vm.entity.tipoEntidad}}</span>
+	</div>
+	<div class="topbar-right">
+		
+	</div>
+</header>
+<section id="content" class="animated fadeIn">
+	<div class="col-sm-6">
+		<div class="form-group">
+			<label for="departamento">Departamento</label>
+			<select class="form-control" id="departamento" ng-model="vm.depaIndex" ng-change="vm.fillProvincia()">
+				<option disabled="disabled" readonly selected>-- Departamento --</option>
+				<option ng-repeat="(index, ubigeo) in vm.ubigeo" value="{{index}}" ng-selected="vm.depaIndex == index">{{ubigeo.descripcion}}</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="provincia">Provincia</label>
+			<select class="form-control" id="provincia" ng-model="vm.provIndex" ng-change="vm.fillDistrito()">
+			<option disabled="disabled" readonly selected>-- Provincia --</option>
+			<option ng-repeat="(index, ubigeo) in vm.provincias" value="{{index}}" ng-selected="vm.provIndex == index">{{ubigeo.descripcion}}</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="distrito">Distrito</label>
+			<select class="form-control" id="distrito" ng-model="vm.entity.idDistrito"><option disabled="disabled" readonly selected>-- Distrito --</option>
+			<option ng-repeat="ubigeo in vm.distritos" value="{{ubigeo.idUbigeo}}">{{ubigeo.descripcion}}</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="domicilio">Domicilio Fiscal</label>
+			<input type="text" id="domicilio" class="form-control" ng-model="vm.entity.domicilioFiscal" placeholder="Domicilio Fiscal">
+		</div>
+		<div class="form-group">
+			<label for="comercial">Nombre Comercial</label>
+			<input type="text" id="comercial" class="form-control" ng-model="vm.entity.nombreComercial" placeholder="Nombre Comercial">
+		</div>
+		<div class="form-group">
+			<label for="correo">Correo</label>
+			<input type="text" id="correo" class="form-control" ng-model="vm.entity.correo" placeholder="Correo">
+		</div>
+		<div class="form-group">
+			<label for="web">Web</label>
+			<input type="text" id="web" class="form-control" ng-model="vm.entity.web" placeholder="Web">
+		</div>
+		<div class="form-group">
+			<button class="btn btn-success pull-right" ng-click="vm.ok()">
+				Actualizar
+			</button>
+		</div>
+	</div>
+</section>
