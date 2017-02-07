@@ -57,6 +57,29 @@
 				});
         }
 
+        vm.showModalSettings = function () {
+            var token = window.atob(store.get('X-MKPL-DATA'));
+            AdminService.getDataUsuario(token)
+                .then(function(res){
+                    if (res.status === 200) {
+						vm.usuario = res.data;
+                    }
+                });
+            $("#settingsModal").modal("show");
+        };
+
+        vm.editarUsuario = function () {
+            vm.usuario.token = window.atob(store.get('X-MKPL-DATA'));
+            AdminService.put(vm.usuario)
+                .then(function(res){
+                    if (res.status === 200) {
+                        Jager.success("Se actualizo correctamente");
+                        vm.usuario = {};
+                        $("#settingsModal").modal("hide");
+                    }
+                });
+        }
+
 
 	};
 
