@@ -20,6 +20,7 @@
 
         vm.fillProvincia = function () {
             vm.provincias = vm.ubigeo[vm.depaIndex].provincias;
+            console.log('provincias: ', vm.provincias);
             vm.entity.idDepartamento = vm.ubigeo[vm.depaIndex].idUbigeo;
         }
 
@@ -34,14 +35,14 @@
                 .then(function(res) {
                     if (res.status === 200) {
                         vm.ubigeo = res.data;
+                        get();
+                        // document.getElementById('provincia').selectedIndex = vm.depaIndex;
                     } else {
                         console.error(res.data);
                     }
                 })            
         };
-        setTimeout(function() {
-            get();
-        }, 1000);
+       
         function get() {                              
 	        EntityService.get(window.atob(token))
 	            .then(function(res) {
@@ -49,15 +50,19 @@
 	                    vm.entity = res.data;
                         for (var i = 0; i < vm.ubigeo.length; i++) {
                             if (vm.ubigeo[i].idUbigeo == vm.entity.idDepartamento) {
-                                vm.depaIndex = i; 
+                                vm.depaIndex = i;
+                                vm.provincias = vm.ubigeo[vm.depaIndex].provincias;
+                                
                             }
                         }
+                        vm.fillProvincia();
                         for (var i = 0; i < vm.ubigeo[vm.depaIndex].provincias.length; i++) {
                             if (vm.ubigeo[vm.depaIndex].provincias[i].idUbigeo == vm.entity.idProvincia) {
                                 vm.provIndex = i; 
                             }
                         }
                         
+                                        
                         for (var i = 0; i < vm.ubigeo[vm.depaIndex].provincias[vm.provIndex].distritos.length; i++) {
                             if (vm.ubigeo[vm.depaIndex].provincias[vm.provIndex].distritos[i].idUbigeo == vm.entity.idDistrito) {
                                 vm.distIndex = i; 
@@ -65,13 +70,11 @@
                             }
                         }
                         console.log(vm.depaIndex, vm.provIndex, vm.distIndex);
-
 	                } else {
 	                	console.error(res.data);
 	                }
-	            })       
-            vm.fillProvincia();     
-            vm.fillDistrito();     
+	            });
+    
         };
 
        

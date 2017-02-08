@@ -17,9 +17,7 @@
 		</div>
 		<div class="form-group">
 			<label for="provincia">Provincia</label>
-			<select class="form-control" id="provincia" ng-model="vm.provIndex" ng-change="vm.fillDistrito()">
-			<option disabled="disabled" readonly selected>-- Provincia --</option>
-			<option ng-repeat="(index, ubigeo) in vm.provincias" value="{{index}}" ng-selected="vm.provIndex == index">{{ubigeo.descripcion}}</option>
+			<select class="form-control" id="provincia" ng-model="vm.provIndex" ng-change="vm.fillDistrito()" ng-options="(index, ubigeo) in vm.provincias" ng-if="vm.provincias.length > 0">
 			</select>
 		</div>
 		<div class="form-group">
