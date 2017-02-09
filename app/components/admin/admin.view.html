@@ -56,22 +56,10 @@
       <span class="sidebar-title">Entidad</span>
     </a>
   </li>
-  <li id="product" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
-    <a ui-sref="admin.product">
+  <li id="businessproducts" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.businessproducts">
       <span class="fa fa-gift"></span>
-      <span class="sidebar-title">Producto</span>
-    </a>
-  </li>
-  <li id="combination" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
-    <a ui-sref="admin.combination">
-      <span class="fa fa-gift"></span>
-      <span class="sidebar-title">Combinacion</span>
-    </a>
-  </li>
-  <li id="stock" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
-    <a ui-sref="admin.stock">
-      <span class="fa fa-gift"></span>
-      <span class="sidebar-title">Stock</span>
+      <span class="sidebar-title">Productos</span>
     </a>
   </li>
   <li id="combo" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
@@ -80,6 +68,19 @@
       <span class="sidebar-title">Combo</span>
     </a>
   </li>
+  <!-- <li id="combination" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.combination">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Combinacion</span>
+    </a>
+  </li> -->
+  <li id="stock" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
+    <a ui-sref="admin.stock">
+      <span class="fa fa-gift"></span>
+      <span class="sidebar-title">Stock</span>
+    </a>
+  </li>
+ 
   <li id="sale" data-ng-if="vm.user.tipoId == 2 || vm.user.tipoId == 3">
     <a ui-sref="admin.sale">
       <span class="fa fa-gift"></span>

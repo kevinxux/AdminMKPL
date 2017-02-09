@@ -1,0 +1,139 @@
+<header id="topbar" class="alt">
+	<div class="topbar-left pull-left">
+		<h1 class="mn">Combos</h1><span class="text-shady-lady fs15">Gestión de combos</span>
+	</div>
+	<div class="topbar-right">
+		<div class="btn-group">
+			<button type="button" data-ng-click="vm.open();" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+		</div>
+	</div>
+</header>
+<section id="content" class="table-layout animated fadeIn">
+	<div class="sub-content col-sm-6">
+		<table class="table">
+			<thead>
+				<tr class="primary">
+					<th>idCombo</th>
+					<th>precioMin</th>
+					<th>precioMax</th>
+				    <th>precioLista</th>
+				    <th>precioProducto</th>
+				    <th>Productos </th>
+				    <th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="c in vm.combos">
+					<td data-ng-bind="c.idCombo"></td>
+					<td data-ng-bind="c.precioMin"></td>
+					<td data-ng-bind="c.precioMax"></td>
+				    <td data-ng-bind="c.precioLista"></td>
+				    <td data-ng-bind="c.precioProducto"></td>
+				    <td data-ng-bind="c.detalle"></td>
+					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(p)"></i></td>
+				</tr>			
+			</tbody>
+			</table>
+		</div>
+	</section>
+	<div class="modal fade" id="modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-ng-click="vm.close();" >
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Gestión de Producto</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Categoría</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<select id="idCategoriaProducto" data-ng-model="vm.category" class="form-control" ng-options="c as c.descripcion for c in vm.categories track by c.idCategoriaProducto" ng-change="vm.fillSubCategories()"></select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Sub Categoría</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<select id="idSubCategoriaProducto" data-ng-model="vm.subCategoria" class="form-control" ng-options="s as s.descripcion for s in vm.subCategories track by s.idSubCategoriaProducto"></select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Moneda</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<select id="idMoneda" data-ng-model="vm.moneda" class="form-control" ng-options="m as m.descripcion for m in vm.currencies track by m.idMoneda"></select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Nombre</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.descripcion" id="nombre" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Precio Mínimo</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.precioMin" id="precioMin" type="number" class="form-control" min="0">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Precio Máximo</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.precioMax" id="precioMax" type="number" class="form-control" min="0">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Precio Lista</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.precioLista" id="precioLista" type="number" class="form-control" min="0">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Precio Costo</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.precioCosto" id="precioCosto" type="number" class="form-control" min="0">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">SKU</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.sku" id="sku" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nombre" class="col-lg-3 control-label">Palabras Clave</label>
+							<div class="col-lg-8">
+								<div class="bs-component">
+									<input data-ng-model="vm.product.palabrasClave" id="palabrasClave" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-ng-click="vm.close();" >Cerrar</button>
+					<button type="button" class="btn btn-primary" data-ng-click="vm.ok()" data-ng-bind="vm.buttonPopup();"></button>
+					<button type="button" class="btn btn-warning" data-ng-click="vm.remove();" ng-if="vm.showdelete();">Eliminar</button>
+				</div>
+			</div>
+		</div>
+	</div>

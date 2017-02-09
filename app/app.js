@@ -383,6 +383,38 @@
                     }]
                 }
             })
+            .state('admin.businessproducts', {
+                url: '/businessproducts',
+                templateUrl: './app/components/products/products.view.html',
+                controller: 'ProductsController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/products/products.controller.js',
+                                './app/components/products/products.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
+            .state('admin.combo', {
+                url: '/combo',
+                templateUrl: './app/components/combo/combo.view.html',
+                controller: 'ComboController',
+                controllerAs: 'vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function(lazy) {
+                        return lazy.load([{
+                            files: [
+                                './app/components/combo/combo.controller.js',
+                                './app/components/combo/combo.service.js'
+                            ]
+                        }]);
+                    }]
+                }
+            })
 
     };
 
