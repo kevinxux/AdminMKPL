@@ -10,21 +10,23 @@
 	<div class="col-sm-6">
 		<div class="form-group">
 			<label for="departamento">Departamento</label>
-			<select class="form-control" id="departamento" ng-model="vm.depaIndex" ng-change="vm.fillProvincia()">
-				<option disabled="disabled" readonly selected>-- Departamento --</option>
-				<option ng-repeat="(index, ubigeo) in vm.ubigeo" value="{{index}}" ng-selected="vm.depaIndex == index">{{ubigeo.descripcion}}</option>
-			</select>
+			<select id="departamento" class="form-control" 
+				ng-model="vm.departamento"  
+				ng-init="vm.departamento = vm.entity.idDepartamento"
+				ng-options="u as u.descripcion for u in vm.ubigeo"
+			></select>
 		</div>
 		<div class="form-group">
 			<label for="provincia">Provincia</label>
-			<select class="form-control" id="provincia" ng-model="vm.provIndex" ng-change="vm.fillDistrito()" ng-options="(index, ubigeo) in vm.provincias" ng-if="vm.provincias.length > 0">
-			</select>
+			<select id="provincia" class="form-control" 
+				ng-model="vm.provincia"
+				ng-options="p as p.descripcion for p in vm.departamento.provincias"></select>
 		</div>
 		<div class="form-group">
 			<label for="distrito">Distrito</label>
-			<select class="form-control" id="distrito" ng-model="vm.entity.idDistrito"><option disabled="disabled" readonly selected>-- Distrito --</option>
-			<option ng-repeat="ubigeo in vm.distritos" value="{{ubigeo.idUbigeo}}">{{ubigeo.descripcion}}</option>
-			</select>
+			<select id="distrito" class="form-control" 
+				ng-model="vm.distrito"  
+				ng-options="d as d.descripcion for d in vm.provincia.distritos"></select>
 		</div>
 		<div class="form-group">
 			<label for="domicilio">Domicilio Fiscal</label>

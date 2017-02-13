@@ -16,7 +16,8 @@
 
         var token = store.get('X-MKPL-DATA');
         vm.combo = {};
-
+        vm.prod = {};
+        vm.combo.detalles = [];
 
         findAll();
         function findAll() {                              
@@ -32,7 +33,7 @@
 
         fillProducts();
         function fillProducts() {
-            ComboService.getProducts()
+            ComboService.getProducts(window.atob(token))
                 .then(function(res) {
                     if (res.status === 200) {
                         vm.products = res.data;
@@ -40,6 +41,10 @@
                         console.error(res.data);
                     }
                 })         
+        }
+
+        vm.addProduct = function() {
+            vm.combo.detalles.push({});
         }
 
         vm.buttonPopup = function() {
@@ -89,21 +94,14 @@
                     precioMin: vm.combo.precioMin,
                     precioMax: vm.combo.precioMax,
                     precioLista: vm.combo.precioLista,
-                    detalle: vm.combo.detalle,
+                    detalle: vm.combo.detalles,
                     token: window.atob(token),
                 };
-                var detalle = {
-                            "idProducto": 0,
-                      
-                            "cantidad": 0,
-                      
-                        };
-
                 ComboService.save(body)
                     .then(function(res) {
                         isProcessing = false;
                         if (res.status === 200) {
-                            Jager.success("Se ha registrado el producto");
+                            Jager.success("Se ha registrado el combo");
                             findAll();
                             vm.close();         
                         } else {                            
@@ -114,13 +112,13 @@
         }
 
         vm.open = function() {
-            $("#modal-product").modal("show");      
+            $("#modal-combo").modal("show");      
         }
 
         vm.close = function() {
             editing = false;
-            vm.product = {};
-            $("#modal-product").modal("hide");    
+            vm.combo = {};
+            $("#modal-combo").modal("hide");    
         }
 
     };

@@ -30,103 +30,62 @@
 				    <td data-ng-bind="c.precioLista"></td>
 				    <td data-ng-bind="c.precioProducto"></td>
 				    <td data-ng-bind="c.detalle"></td>
-					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(p)"></i></td>
+					<td><i class="fa fa-pencil" data-ng-click="vm.preEdit(c)"></i></td>
 				</tr>			
 			</tbody>
 			</table>
 		</div>
 	</section>
-	<div class="modal fade" id="modal-product" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal fade" id="modal-combo" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-ng-click="vm.close();" >
 					<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title">Gestión de Producto</h4>
+					<h4 class="modal-title">Gestión de Combo</h4>
 				</div>
 				<div class="modal-body">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Categoría</label>
+							<label for="precioMin" class="col-lg-3 control-label">Precio Mínimo</label>
 							<div class="col-lg-8">
 								<div class="bs-component">
-									<select id="idCategoriaProducto" data-ng-model="vm.category" class="form-control" ng-options="c as c.descripcion for c in vm.categories track by c.idCategoriaProducto" ng-change="vm.fillSubCategories()"></select>
+									<input data-ng-model="vm.combo.precioMin" id="precioMin" type="text" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Sub Categoría</label>
+							<label for="precioMax" class="col-lg-3 control-label">Precio Máximo</label>
 							<div class="col-lg-8">
 								<div class="bs-component">
-									<select id="idSubCategoriaProducto" data-ng-model="vm.subCategoria" class="form-control" ng-options="s as s.descripcion for s in vm.subCategories track by s.idSubCategoriaProducto"></select>
+									<input data-ng-model="vm.combo.precioMax" id="precioMax" type="text" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Moneda</label>
+							<label for="precioLista" class="col-lg-3 control-label">Precio Lista</label>
 							<div class="col-lg-8">
 								<div class="bs-component">
-									<select id="idMoneda" data-ng-model="vm.moneda" class="form-control" ng-options="m as m.descripcion for m in vm.currencies track by m.idMoneda"></select>
+									<input data-ng-model="vm.combo.precioLista" id="precioLista" type="text" class="form-control">
 								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Nombre</label>
-							<div class="col-lg-8">
+						<div class="form-group" ng-repeat="detalle in vm.combo.detalles">
+							<div class="col-sm-6">
 								<div class="bs-component">
-									<input data-ng-model="vm.product.descripcion" id="nombre" type="text" class="form-control">
+									<label for="products" class="col-lg-3 control-label">Producto</label>
+									<select id="products" data-ng-model="detalle.idProducto" class="form-control" ng-options="c.idProducto as c.descripcion for c in vm.products track by c.idProducto"></select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="bs-component">
+									<label for="precio" class="col-lg-3 control-label">Precio</label>
+									<input data-ng-model="detalle.precio" id="precioLista" type="text" class="form-control">
 								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Mínimo</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioMin" id="precioMin" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Máximo</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioMax" id="precioMax" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Lista</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioLista" id="precioLista" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Costo</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioCosto" id="precioCosto" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">SKU</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.sku" id="sku" type="text" class="form-control">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Palabras Clave</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.palabrasClave" id="palabrasClave" type="text" class="form-control">
-								</div>
-							</div>
-						</div>
+						<button type="button" class="btn btn-primary" data-ng-click="vm.addProduct()">+ Agregar producto</button>
 					</div>
 				</div>
 				<div class="modal-footer">

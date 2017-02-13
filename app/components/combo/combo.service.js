@@ -6,7 +6,7 @@
         .factory('ComboService', ComboService);
 
     /* @ngInject */
-    function ProductsService(BASE_PATH, $http) {
+    function ComboService(BASE_PATH, $http) {
         var ALL_PRODUCTS = "Producto/GetProductosEntidad";
         var ALL_COMBOS = "ComboProducto/ObtenerComboProductos";
         var EDIT = "ComboProducto/ModificarComboProducto";
@@ -66,8 +66,8 @@
             }
         }
 
-        function getProducts() {
-           return $http.get(BASE_PATH + ALL_PRODUCTS )
+        function getProducts(token) {
+           return $http.get(BASE_PATH + ALL_PRODUCTS + '/' + token)
                 .then(getCallResponse)
                 .catch(getCallError);
 
