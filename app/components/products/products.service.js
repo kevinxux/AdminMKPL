@@ -59,7 +59,16 @@
         }
 
         function images(data) {
-            return $http.put(BASE_PATH + IMAGES, data)
+            var fd = new FormData();
+            fd.append('banner', data.banner);
+            fd.append('logo',data.logo);
+            fd.append('token',data.token);
+
+            return $http.put(BASE_PATH + IMAGES, fd,
+             {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined}
+             })
                 .then(getCallResponse)
                 .catch(getCallError);
 
