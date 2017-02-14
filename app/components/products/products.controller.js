@@ -139,6 +139,28 @@
             }            
         }
 
+        vm.uploadFiles = function() {
+            isProcessing = true;
+            var body = {
+                file1: vm.entity.file1,
+                file2: vm.entity.file2,
+                file3: vm.entity.file3,
+                file4: vm.entity.file4,
+                file5: vm.entity.file5,
+                token: window.atob(token)
+            }
+            console.log(body);
+            ProductsService.images(body)
+                .then(function(res) {
+                    isProcessing = false;
+                    if (res.status === 200) {
+                        Jager.success("Se han actualizado correctamente las imagenes.");
+                    } else {                            
+                        Jager.error(res.data);
+                    }
+                });
+        };
+
         vm.open = function() {
             $("#modal-product").modal("show");      
         }

@@ -11,6 +11,7 @@
         var ALL_CATEGORIES = "CategoriaProducto/ObtenerCategoriaProductos";
         var ALL_SUBCATEGORIES = "SubCategoriaProducto/ObtenerSubCategoriaProductos";
         var ALL_CURRENCIES = "Moneda/ObtenerMonedas";
+        var IMAGES = "Producto/EnviarImagenProducto";
         var EDIT = "Producto/ModificarProducto";
         var SAVE = "Producto/NuevoProducto";
         var REMOVE = "Producto/EliminarProducto";
@@ -20,6 +21,7 @@
             getCategories: getCategories,
             getSubCategories: getSubCategories,
             getCurrencies: getCurrencies,
+            images: images,
             put: put,
             save: save,
             remove: remove
@@ -44,6 +46,20 @@
 
         function put(data) {
             return $http.put(BASE_PATH + EDIT, data)
+                .then(getCallResponse)
+                .catch(getCallError);
+
+            function getCallResponse(response) {
+                return response;
+            }
+
+            function getCallError(error) {
+                return error;
+            }
+        }
+
+        function images(data) {
+            return $http.put(BASE_PATH + IMAGES, data)
                 .then(getCallResponse)
                 .catch(getCallError);
 

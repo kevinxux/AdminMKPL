@@ -38,6 +38,7 @@
 	        EntityService.get(window.atob(token))
 	            .then(function(res) {
 	                if (res.status === 200) {
+                        console.log(window.atob(token));
                         vm.entity = res.data;
                         vm.departamento = findUbigeo(vm.ubigeo, vm.entity.idDepartamento);
                         vm.provincia = findUbigeo(vm.departamento.provincias, vm.entity.idProvincia);
@@ -59,7 +60,26 @@
                 .then(function(res) {
                     isProcessing = false;
                     if (res.status === 200) {
-                        Jager.success("Se ha actualizado correctamente el tipo de combinación.");
+                        Jager.success("Se han actualizado correctamente los datos.");
+                    } else {                            
+                        Jager.error(res.data);
+                    }
+                });
+        }
+
+        vm.uploadFiles = function() {
+            isProcessing = true;
+            var body = {
+                banner: vm.entity.banner,
+                logo: vm.entity.logo,
+                token: window.atob(token)
+            };
+            console.log(body);
+            EntityService.image(body)
+                .then(function(res) {
+                    isProcessing = false;
+                    if (res.status === 200) {
+                        Jager.success("Se han actualizado correctamente las imagenes.");
                     } else {                            
                         Jager.error(res.data);
                     }

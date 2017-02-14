@@ -56,85 +56,97 @@
 					<h4 class="modal-title">Gestión de Producto</h4>
 				</div>
 				<div class="modal-body">
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Categoría</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<select id="idCategoriaProducto" data-ng-model="vm.category" class="form-control" ng-options="c as c.descripcion for c in vm.categories track by c.idCategoriaProducto" ng-change="vm.fillSubCategories()"></select>
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="form-horizontal">
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Categoría</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<select id="idCategoriaProducto" data-ng-model="vm.category" class="form-control" ng-options="c as c.descripcion for c in vm.categories track by c.idCategoriaProducto" ng-change="vm.fillSubCategories()"></select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Sub Categoría</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<select id="idSubCategoriaProducto" data-ng-model="vm.subCategoria" class="form-control" ng-options="s as s.descripcion for s in vm.subCategories track by s.idSubCategoriaProducto"></select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Moneda</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<select id="idMoneda" data-ng-model="vm.moneda" class="form-control" ng-options="m as m.descripcion for m in vm.currencies track by m.idMoneda"></select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Nombre</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.descripcion" id="nombre" type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Precio Mínimo</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.precioMin" id="precioMin" type="number" class="form-control" min="0">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Precio Máximo</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.precioMax" id="precioMax" type="number" class="form-control" min="0">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Precio Lista</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.precioLista" id="precioLista" type="number" class="form-control" min="0">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Precio Costo</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.precioCosto" id="precioCosto" type="number" class="form-control" min="0">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">SKU</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.sku" id="sku" type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="nombre" class="col-lg-3 control-label">Palabras Clave</label>
+									<div class="col-lg-8">
+										<div class="bs-component">
+											<input data-ng-model="vm.product.palabrasClave" id="palabrasClave" type="text" class="form-control">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Sub Categoría</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<select id="idSubCategoriaProducto" data-ng-model="vm.subCategoria" class="form-control" ng-options="s as s.descripcion for s in vm.subCategories track by s.idSubCategoriaProducto"></select>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Moneda</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<select id="idMoneda" data-ng-model="vm.moneda" class="form-control" ng-options="m as m.descripcion for m in vm.currencies track by m.idMoneda"></select>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Nombre</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.descripcion" id="nombre" type="text" class="form-control">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Mínimo</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioMin" id="precioMin" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Máximo</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioMax" id="precioMax" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Lista</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioLista" id="precioLista" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Precio Costo</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.precioCosto" id="precioCosto" type="number" class="form-control" min="0">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">SKU</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.sku" id="sku" type="text" class="form-control">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="nombre" class="col-lg-3 control-label">Palabras Clave</label>
-							<div class="col-lg-8">
-								<div class="bs-component">
-									<input data-ng-model="vm.product.palabrasClave" id="palabrasClave" type="text" class="form-control">
-								</div>
+						<div class="col-sm-4">
+							<div class="form-horizontal">
+								<label for="">Imagenes: </label>
+								<span class="button btn btn-primary btn-file btn-block"><span ng-if="vm.entity.banner" class="fileupload-new"> <i class="fa fa-image"></i> Cambiar imagen</span>
+								<span ng-if="!vm.entity.banner" class="fileupload-new"> <i class="fa fa-image"></i> Selecciona una imagen</span>
+						        <input type="file" id="fileUpload" file-model="vm.entity.banner" accept=".png, .jpg, .jpeg" /></span>
 							</div>
 						</div>
 					</div>

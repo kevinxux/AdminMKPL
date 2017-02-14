@@ -50,4 +50,25 @@
 			</button>
 		</div>
 	</div>
+	<div class="col-sm-4">
+		<label for="">Logo: </label>
+		<span class="button btn btn-primary btn-file btn-block"><span ng-if="vm.entity.logo" class="fileupload-new"> <i class="fa fa-image"></i> Cambiar imagen</span>
+		<span ng-if="!vm.entity.logo" class="fileupload-new"> <i class="fa fa-image"></i> Selecciona una imagen</span>
+        <input type="file" id="fileUpload" file-model="vm.entity.logo" accept=".png, .jpg, .jpeg" /></span>
+        <br>
+        <br>
+        <br>
+		<label for="">Banner: </label>
+		<span class="button btn btn-primary btn-file btn-block"><span ng-if="vm.entity.banner" class="fileupload-new"> <i class="fa fa-image"></i> Cambiar imagen</span>
+		<span ng-if="!vm.entity.banner" class="fileupload-new"> <i class="fa fa-image"></i> Selecciona una imagen</span>
+        <input type="file" id="fileUpload" file-model="vm.entity.banner" accept=".png, .jpg, .jpeg" /></span>
+		<br>
+		<br>
+		<br>
+        <div class="form-group">
+			<button class="btn btn-success pull-right" ng-click="vm.uploadFiles()">
+				Actualizar Imagenes
+			</button>
+		</div>
+	</div>
 </section>
