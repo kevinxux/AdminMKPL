@@ -66,7 +66,7 @@
                     }
                 });
         }
-
+    
         vm.uploadFiles = function() {
             isProcessing = true;
             var body = {
